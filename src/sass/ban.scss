@@ -1,5 +1,17 @@
 @charset "UTF-8";
-.carousel{
+#carousel-example-generic{
     height: 360px;
     width: 1260px;
+    img{
+        height: 360px;
+    }
+    
+    ol li{
+        margin: 0 5px;
+        background: white;
+    }
+    .active{
+            padding: 0 14px;
+            background: hotpink;
+        }
 }
