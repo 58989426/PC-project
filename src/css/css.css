@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*
+* 公用 css样式
+*该样式用于 大部分页面标签自带样式的重置以及多页面通用样式
+*主要涉及调整 字体颜色 字体大小 字体加粗 图标通用样式 边框阴影 鼠标手势 隐藏
+*该样式用于银犁食品B2C网站  主以sp-xx-yy名
+*该样式可添加多页面通用css 不可修改
+*/
+/*-------  CSS Reset_start  重置开始  ---------*/
+html, body, h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ol, ul, li,
+table, th, td, tr, caption, header, footer, section, aside, nav, figure, figcaption,
+a, img, span, strong, var, em, small, i, sub, sup,
+form, input, textarea, select, option, iframe, pre {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  font: 12px/1.5 "Microsoft Yahei", Arial, Helvetica, sans-serif;
+  color: #666; }
+
+a, img, a img {
+  border: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle; }
+
+th, strong, var, em, i, small {
+  font-weight: normal;
+  font-style: normal; }
+
+a {
+  color: #666;
+  text-decoration: none; }
+
+em, i, u {
+  font-style: normal; }
+li{
+	list-style: none;
+}
+/*# sourceMappingURL=css.css.map */
