@@ -6,13 +6,758 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
 	<link rel="stylesheet" type="text/css" href="css/css.css"/>
 	<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+	<link rel="stylesheet" href="css/header.css" />
+	<link rel="stylesheet" type="text/css" href="css/nav.css"/>
+	<link rel="stylesheet" type="text/css" href="/lib/font/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="css/banner.css" />
+	
 </head>
 <body>
+	<!--**************************************************
+	网站头部
+	
+*************************************************************-->
 	<header>
-		
-		
+		<div class="sp-header-bg">
+	    	<div class="sp-wrap tool-nav">
+	        <ul class="sp-left">
+	            <li>
+	                <span>送至:</span>
+	                <span>四川成都市</span>
+	            </li>
+	        </ul>
+	        <ul class="sp-right site-nav sp-position">
+                <li>
+                    <a href="/security/login">登录</a>
+                </li>
+                <li class="spacer"></li>
+	            
+	            <li>
+	                <a href="/customer/order?type=2">我的订单</a>
+	            </li>
+	            <li class="spacer"></li>
+				<li class="s_app">
+	                    <a href="javascript:void(0)">银犁APP</a>
+	            </li>
+	            <li class="spacer"></li>
+	            <li class="s_tel">
+	                <a href="javascript:void(0)">客服</a>
+	            </li>
+	            
+	        </ul>
+	    </div>
+    </div>
+    
+    <!-- 搜索栏开始-->
+    <div class="header_nav">
+    	<div class="header_logo">
+    		<img src="images/PC-LOGO.png"/>
+    	</div>
+    	
+    	<!--搜索框-->
+    	<div class="sea_bar">
+    		<input type="text"  class="sea_keyword" value="" />
+    		<button id="searchBtn" class="search-btn">搜索</button>
+    	</div>
+    	 <!-- 购物车-->
+        <div class="shopping-car ">
+			
+			<div class="shopping-btn">
+				<!-- 购物车图标-->
+				<i class="glyphicon glyphicon-shopping-cart" id="car_cart"></i>
+				<!-- 个人购物车链接 -->
+				<a href="/customer/cart/commodity">我的购物车</a>
+				<!-- 大于图标-->
+				<i class="glyphicon glyphicon-menu-right" id="cart_right"></i>
+				<!-- 数量上浮图标-->
+				<i class="product_number" id="cartNum">0</i>
+			</div>
+		</div>
+    </div>
+   
 	</header>
-	<footer>
+	
+
+<!--**************************************************
+	网站导航
+	
+*************************************************************-->
+<nav>
+	<a href="/" class="menu-a">
+		<span>全部分类</span>
+		<i class="iconfont icon-jiantouarrow486" id="jt"></i>
+	</a>
+	<!-- 一级菜单 -->
+	<div class="caidan">
+		
+	
+        <ul class="sp-menu-list">
+            
+                <li class="sp-name" data-index="1">
+				<a id="04#1" href="javascript:void(0)"
+                   class="menuFilterSearch">蔬菜</a>
+                    <i class="iconfont icon-jiantou" id="jt_right"></i></li>
+            
+                <li class="sp-name" data-index="2">
+				<a id="03#1" href="javascript:void(0)"
+                   class="menuFilterSearch">水果</a>
+                    <i class="iconfont icon-jiantou" id="jt_right"></i></li>
+            
+                <li class="sp-name" data-index="3">
+				<a id="05#1" href="javascript:void(0)"
+                   class="menuFilterSearch">海鲜水产</a>
+                    <i class="iconfont icon-jiantou" id="jt_right"></i></li>
+            
+                <li class="sp-name" data-index="4">
+				<a id="06#1" href="javascript:void(0)"
+                   class="menuFilterSearch">肉、蛋类</a>
+                    <i class="iconfont icon-jiantou" id="jt_right"></i></li>
+            
+                <li class="sp-name" data-index="5">
+				<a id="01#1" href="javascript:void(0)"
+                   class="menuFilterSearch">速冻食品</a>
+                    <i class="iconfont icon-jiantou" id="jt_right"></i></li>
+            
+                <li class="sp-name" data-index="6">
+				<a id="08#1" href="javascript:void(0)"
+                   class="menuFilterSearch">粮油干货</a>
+                    <i class="iconfont icon-jiantou" id="jt_right"></i></li>
+            
+                <li class="sp-name" data-index="7">
+				<a id="0A#1" href="javascript:void(0)"
+                   class="menuFilterSearch">坚果零食</a>
+                    <i class="iconfont icon-jiantou" id="jt_right"></i></li>
+            
+                <li class="sp-name" data-index="8">
+				<a id="09#1" href="javascript:void(0)"
+                   class="menuFilterSearch">厨房调料</a>
+                    <i class="iconfont icon-jiantou" id="jt_right"></i></li>
+            
+                <li class="sp-name" data-index="9">
+				<a id="07#1" href="javascript:void(0)"
+                   class="menuFilterSearch">酒水乳饮</a>
+                    <i class="iconfont icon-jiantou" id="jt_right"></i></li>
+            
+        </ul>
+        
+<!--二级菜单-->
+		 <div id="menu_detail">
+         	<div class="menu-pannel">
+            	<a class="second-menu menuFilterSearch" id="04001#2">
+            		<img alt="" class="second-menu-img" src="images/5f462d97f85b3c57b115a5b7746f6704..png">
+            		<div class="second-menu-name">叶菜类</div>
+            	</a>
+            
+            	<a class="second-menu menuFilterSearch" id="04002#2">
+            		<img alt="" class="second-menu-img" src="images/86bb5f83e5df67c6cd8e4f4af2faf92d..png">
+            		<div class="second-menu-name">根茎块类</div>
+            	</a>
+            
+            	<a class="second-menu menuFilterSearch" id="04003#2">
+            		<img alt="" class="second-menu-img" src="images/bec35000923a161f2a512cbf0f607e08..png">
+            		<div class="second-menu-name">葱姜蒜椒类</div>
+            	</a>
+
+            	<a class="second-menu menuFilterSearch" id="04004#2">
+            		<img alt="" class="second-menu-img" src="images/818ec389ed6947da3a31672979379af2..png">
+            		<div class="second-menu-name">茄瓜果类</div>
+            	</a>
+
+            	<a class="second-menu menuFilterSearch" id="04006#2">
+            		<img alt="" class="second-menu-img" src="images/78e2b1594aeef45b5f6696abfeb4dad3..png">
+            		<div class="second-menu-name">芽花菜类</div>
+            	</a>
+   
+        </div>
+			<div class="menu-pannel">              
+        	<a class="second-menu menuFilterSearch" id="03008#2">
+        		<img alt="" class="second-menu-img" src="images/10052f7fbaff1705775fbfd30aa70d2a..jpg">
+        		<div class="second-menu-name">柑橘</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="03006#2">
+        		<img alt="" class="second-menu-img" src="images/b41748f3c8d1ff4edb7afc46fc2f51bd..jpg">
+        		<div class="second-menu-name">橙</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="2f866edea5e344c4bf97812ce1798e5b#2">
+        		<img alt="" class="second-menu-img" src="images/9d563654729cb67bbf0ddc9dc0366e0e..jpg">
+        		<div class="second-menu-name">枇杷</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="6b1246a560864aedaf4ad46f6b41a198#2">
+        		<img alt="" class="second-menu-img" src="images/31f1462326cf2484cae0a7cce937d1b4..jpg">
+        		<div class="second-menu-name">葡萄提子</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="eba4ba7c377947a1935c867a5213bfd3#2">
+        		<img alt="" class="second-menu-img" src="images/b9daeb98378e1a9091b4a42c82d1c062..jpg">
+        		<div class="second-menu-name">西瓜</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="03004#2">
+        		<img alt="" class="second-menu-img" src="images/c3b4bd30b69a676c8daa987c7410fed0..jpg">
+        		<div class="second-menu-name">苹果</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="2bf3726cf3cf4bf6a4c15d635b6c51a9#2">
+        		<img alt="" class="second-menu-img" src="images/e665d934906165c6e49ef64b284d9007..jpg">
+        		<div class="second-menu-name">甘蔗</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="03005#2">
+        		<img alt="" class="second-menu-img" src="images/e6e55c99b3b350d4e4e5e0f294f52d7d..jpg">
+        		<div class="second-menu-name">梨</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="f5a4aa5556e546fa92c5d936a028d188#2">
+        		<img alt="" class="second-menu-img" src="images/8ab42be46ff8cf63939156da20f0d78e..jpg">
+        		<div class="second-menu-name">香蕉</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="0c58c84b751c488480f196db3367f4dc#2">
+        		<img alt="" class="second-menu-img" src="images/2e8bf40a0322cce386c6a73925ce2eec..jpg">
+        		<div class="second-menu-name">菠萝蜜</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="d81be39aa37a40879e5b0f8f06ad8ad6#2">
+        		<img alt="" class="second-menu-img" src="images/a41cd1ab97920eb17b9c0311f33383b1..jpg">
+        		<div class="second-menu-name">火龙果</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="c39226654ac34b05b31b6a60e6a2547f#2">
+        		<img alt="" class="second-menu-img" src="images/11d23c49c745fb6afeb1377e94d56c5a..jpg">
+        		<div class="second-menu-name">哈密瓜</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="98615809a40142cb97db79395e8ca6cf#2">
+        		<img alt="" class="second-menu-img" src="images/f47976f544d51d0e56941a62cf39f094..jpg">
+        		<div class="second-menu-name">木瓜</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="03007#2">
+        		<img alt="" class="second-menu-img" src="images/a9b83b695a48e05f41dace754ff5ab3d..jpg">
+        		<div class="second-menu-name">柠檬</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="0300A#2">
+        		<img alt="" class="second-menu-img" src="images/c3c07000acffc00ae2b1783e27a9b42b..jpg">
+        		<div class="second-menu-name">猕猴桃</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="0300D#2">
+        		<img alt="" class="second-menu-img" src="images/78f667c87969e5fdc0d6e00e4ff92e8c..jpg">
+        		<div class="second-menu-name">蓝莓</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="03002#2">
+        		<img alt="" class="second-menu-img" src="images/c059b7ba205aa0a8aabcff16afbe063a..jpg">
+        		<div class="second-menu-name">龙眼</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="0300B#2">
+        		<img alt="" class="second-menu-img" src="images/0a94ccb22853f96aa54c6187891a596a..jpg">
+        		<div class="second-menu-name">芒果类</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="0300F#2">
+        		<img alt="" class="second-menu-img" src="images/078c3c916856e395c81b488e47125304..jpg">
+        		<div class="second-menu-name">榴莲</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="0300C#2">
+        		<img alt="" class="second-menu-img" src="images/4a47c9aec7cdd3b757a75d56e9efb758..jpg">
+        		<div class="second-menu-name">圣女果</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="03009#2">
+        		<img alt="" class="second-menu-img" src="images/5cd9d43a1e79caf541b1527502c5b5ee..jpg">
+        		<div class="second-menu-name">椰子</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="0300E#2">
+        		<img alt="" class="second-menu-img" src="images/a8e516f8dc864393689d004171650cbb..jpg">
+        		<div class="second-menu-name">百香果</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="d40cd5302927412ab528a94889471ff4#2">
+        		<img alt="" class="second-menu-img" src="images/83e493a42f4b54567c2a5659305c7c48..jpg">
+        		<div class="second-menu-name">菠萝</div>
+        	</a>
+                            
+                        </div>
+	 		<div class="menu-pannel">
+        	<a class="second-menu menuFilterSearch" id="3db296025ab84d1eb0dbf2acacb1f620#2">
+        		<img alt="" class="second-menu-img" src="images/1e5171f603d7e0ab8f767ba1d2296ff9..png">
+        		<div class="second-menu-name">开背海鱼</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="250ed377e26a4a1695fdc248e37c856d#2">
+        		<img alt="" class="second-menu-img" src="images/d92e45c2debde2941db6cefd231ae4f2..jpg">
+        		<div class="second-menu-name">黄花鱼</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="67b0eec240e743edabcc5ee79d17df3d#2">
+        		<img alt="" class="second-menu-img" src="images/33efd196b669252520b7aaa579b4a9bc..jpg">
+        		<div class="second-menu-name">耗儿鱼</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="5060afe2dd3b48dcb6eac57cc0e233f3#2">
+        		<img alt="" class="second-menu-img" src="images/9681f71838327e2ea66dbb094f87b63c..png">
+        		<div class="second-menu-name">金枪鱼</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="e71d866f2e244474b46c3a48761c2a28#2">
+        		<img alt="" class="second-menu-img" src="images/937ac50700e825c4b771b8a2ca719a8e..png">
+        		<div class="second-menu-name">鳕鱼</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="0f643c4b6a284492a95e592dfe79be8a#2">
+        		<img alt="" class="second-menu-img" src="images/e0d40f042cb7ffefe1bb1b18bac646f3..jpg">
+        		<div class="second-menu-name">鱿鱼</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="9b4381362299432bb0b07ae99f3cfe6a#2">
+        		<img alt="" class="second-menu-img" src="images/904b1864932492021f1241c9ec3ea8a0..png">
+        		<div class="second-menu-name">贝类</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="05001#2">
+        		<img alt="" class="second-menu-img" src="images/b3c47603473b2652d98e06e9d68aff2a..jpg">
+        		<div class="second-menu-name">对虾</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="05003#2">
+        		<img alt="" class="second-menu-img" src="images/f9cda67ce42b3f8b16f295d2d9005085..jpg">
+        		<div class="second-menu-name">小龙虾</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="05007#2">
+        		<img alt="" class="second-menu-img" src="images/e9e2da8fc6592fe785d407856c2acb97..jpg">
+        		<div class="second-menu-name">红虾</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="05006#2">
+        		<img alt="" class="second-menu-img" src="images/6400f8d3ee317d3e95b56889bb456fb8..png">
+        		<div class="second-menu-name">泰国虾仁</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="05002#2">
+        		<img alt="" class="second-menu-img" src="images/581323f89ea2e59a62ce1b86a8890486..jpg">
+        		<div class="second-menu-name">白虾</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="05004#2">
+        		<img alt="" class="second-menu-img" src="images/c3c69248d58eee18eff322f774684f73..jpg">
+        		<div class="second-menu-name">爬爬虾</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="5a3bf41452f34a2e8daaa0886ef42617#2">
+        		<img alt="" class="second-menu-img" src="images/4d69cf9e6f5dd5b28aaab2ea15debcbe..jpg">
+        		<div class="second-menu-name">虾半成品</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="05005#2">
+        		<img alt="" class="second-menu-img" src="images/13a5e37215d2d5a605422abde0a037fd..jpg">
+        		<div class="second-menu-name">北极甜虾</div>
+        	</a>
+        
+        	<a class="second-menu menuFilterSearch" id="42da871d6bb54a3a8e7521270c5a71fc#2">
+        		<img alt="" class="second-menu-img" src="images/639c2e12613b5b43c7456f2d1d15abc1..png">
+        		<div class="second-menu-name">三文鱼</div>
+        	</a>
+                            
+                        </div>
+	 		 <div class="menu-pannel">
+                            	<a class="second-menu menuFilterSearch" id="06001#2">
+                            		<img alt="" class="second-menu-img" src="images/cc04ab1fb245ee4c0192ffbafcec84e0..png">
+                            		<div class="second-menu-name">猪肉</div>
+                            	</a>
+                            
+                            	<a class="second-menu menuFilterSearch" id="06002#2">
+                            		<img alt="" class="second-menu-img" src="images/6b4067933ec6680a0e45b7eb3b2e6cdd..png">
+                            		<div class="second-menu-name">牛排</div>
+                            	</a>
+                            
+                            	<a class="second-menu menuFilterSearch" id="06003#2">
+                            		<img alt="" class="second-menu-img" src="images/dd4f5f25a047fe233e9d31db5a7ae506..png">
+                            		<div class="second-menu-name">牛肉</div>
+                            	</a>
+                            
+                            	<a class="second-menu menuFilterSearch" id="443916d4dcbd4d8f8970dfabb7c3d748#2">
+                            		<img alt="" class="second-menu-img" src="images/2fcbed7559f07a987ae5bf43c8368780..png">
+                            		<div class="second-menu-name">羊杂</div>
+                            	</a>
+                            
+                            	<a class="second-menu menuFilterSearch" id="77dfe9d1c2d94e1fb4d0b51e92f30da2#2">
+                            		<img alt="" class="second-menu-img" src="images/916eeb283cf3952bb12badff39bed5d9..png">
+                            		<div class="second-menu-name">羊肉</div>
+                            	</a>
+                            
+                            	<a class="second-menu menuFilterSearch" id="e0542f8632a24d3c94cfeb07b4410e41#2">
+                            		<img alt="" class="second-menu-img" src="images/e5ac6c8f0cf138434d5a1c503f6ae6d6..png">
+                            		<div class="second-menu-name">羊腿</div>
+                            	</a>
+                            
+                            	<a class="second-menu menuFilterSearch" id="cba6788aa1704e4ea3809badec9b45cf#2">
+                            		<img alt="" class="second-menu-img" src="images/703cad976b360a9ba42aba9f5102b7ce..png">
+                            		<div class="second-menu-name">羊排</div>
+                            	</a>
+                            
+                            	<a class="second-menu menuFilterSearch" id="06005#2">
+                            		<img alt="" class="second-menu-img" src="images/a90fb9e8d009130e3bac1b0631c3de6d..png">
+                            		<div class="second-menu-name">鸡肉</div>
+                            	</a>
+                            
+                            	<a class="second-menu menuFilterSearch" id="06006#2">
+                            		<img alt="" class="second-menu-img" src="images/3bfd493d5da7021335800a1e6b00be67..png">
+                            		<div class="second-menu-name">鸭肉</div>
+                            	</a>
+                            
+                            	<a class="second-menu menuFilterSearch" id="0600A#2">
+                            		<img alt="" class="second-menu-img" src="images/841ef6e5006902d9588c03d87d3a9aed..png">
+                            		<div class="second-menu-name">方便肉品</div>
+                            	</a>
+                            
+                            	<a class="second-menu menuFilterSearch" id="06009#2">
+                            		<img alt="" class="second-menu-img" src="images/6859b609aa7fa8638f56771188759a3b..png">
+                            		<div class="second-menu-name">蛋类制品</div>
+                            	</a>
+                            
+                            	<a class="second-menu menuFilterSearch" id="06008#2">
+                            		<img alt="" class="second-menu-img" src="images/e6e8591b16356780a275aa00b7f03dec..png">
+                            		<div class="second-menu-name">其他肉类</div>
+                            	</a>
+                            
+                        </div>
+	 		 <div class="menu-pannel">
+                            <!-- 二级菜单 -->
+                            
+                            	<a class="second-menu menuFilterSearch" id="01003#2">
+                            		<img alt="" class="second-menu-img" src="images/0812771f753935e6ea667ff22f94fb5d..png">
+                            		<div class="second-menu-name">水饺</div>
+                            	</a>
+                            
+                            	<a class="second-menu menuFilterSearch" id="01002#2">
+                            		<img alt="" class="second-menu-img" src="images/77f93990e243d9d692cd458564c90412..png">
+                            		<div class="second-menu-name">汤圆</div>
+                            	</a>
+                            
+                            	<a class="second-menu menuFilterSearch" id="01001#2">
+                            		<img alt="" class="second-menu-img" src="images/4e8a216e43fc3ba5083ee48b5e4cc27d..png">
+                            		<div class="second-menu-name">云吞</div>
+                            	</a>
+                            
+                            	<a class="second-menu menuFilterSearch" id="a2593c2ef57741229ee52855d3d88f5c#2">
+                            		<img alt="" class="second-menu-img" src="images/4bb617e665f629841adfe4d274d6389c..png">
+                            		<div class="second-menu-name">馒头</div>
+                            	</a>
+                            
+                            	<a class="second-menu menuFilterSearch" id="5b7d9ff166a74cb196e3dcfcdbea5334#2">
+                            		<img alt="" class="second-menu-img" src="images/0dabd76f7b7a48c6162a0330d408c19a..png">
+                            		<div class="second-menu-name">豆沙包</div>
+                            	</a>
+                            
+                            	<a class="second-menu menuFilterSearch" id="b2b16fcdc84e4a2a83fb9add2aaee196#2">
+                            		<img alt="" class="second-menu-img" src="images/499a6f4ffc889160a032504d35bb8cbe..png">
+                            		<div class="second-menu-name">火锅食材</div>
+                            	</a>
+                            
+                            	<a class="second-menu menuFilterSearch" id="8cda9098126945aebc21eaec37e2a0b0#2">
+                            		<img alt="" class="second-menu-img" src="images/3c8cde832cdd445cd52222c04abc496c..png">
+                            		<div class="second-menu-name">肉串</div>
+                            	</a>
+                            
+                            	<a class="second-menu menuFilterSearch" id="49e7d4b27950448bab3d06ec740abe05#2">
+                            		<img alt="" class="second-menu-img" src="images/738b220b5627f3dc327b901a3a55fd71..png">
+                            		<div class="second-menu-name">速冻小吃</div>
+                            	</a>
+                            
+                            	<a class="second-menu menuFilterSearch" id="b1d83a9884924565828ac3f6a1eb66a3#2">
+                            		<img alt="" class="second-menu-img" src="images/0175116f54a0c7dab9f7762ba7434c1f..png">
+                            		<div class="second-menu-name">桑芽菜</div>
+                            	</a>
+                            
+                        </div>
+	 		 <div class="menu-pannel">
+                                	<a class="second-menu menuFilterSearch" id="d2da912861fe4ce09ed7f3f96f15ff97#2">
+                                		<img alt="" class="second-menu-img" src="images/72be6adae23edeb001a84eefc65b3787..jpg">
+                                		<div class="second-menu-name">玉米油</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="dc670be867264ffba1d5209ceecbd50b#2">
+                                		<img alt="" class="second-menu-img" src="images/b61f2879dd6b14e7331b3a0ccf4dd971..jpg">
+                                		<div class="second-menu-name">菜籽油</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="1f0c4c14c5fc4a1a930cf3288775947e#2">
+                                		<img alt="" class="second-menu-img" src="images/d24c44801f97a0d44662fc9611f62c2e..jpg">
+                                		<div class="second-menu-name">其他食用油</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="e8ae70fd5a184abbad8935494d3144a7#2">
+                                		<img alt="" class="second-menu-img" src="images/2d955574c88eb8547b00e7b950370194..jpg">
+                                		<div class="second-menu-name">珍珠米</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="e46e433ed4d54ee0b0d260459f4052e0#2">
+                                		<img alt="" class="second-menu-img" src="images/e4c08f2ac4b0a27eb78b02bd87a2724e..jpg">
+                                		<div class="second-menu-name">香米</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="76bbd2ac6d294ec1a326c0044fed9707#2">
+                                		<img alt="" class="second-menu-img" src="images/547db08b8f6b1856acec6f5e327a476d..jpg">
+                                		<div class="second-menu-name">东北大米</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="f038050819054129aa345cc2de2f37f4#2">
+                                		<img alt="" class="second-menu-img" src="images/8b0c79f87d0782169351990b1bb3e1a5..jpg">
+                                		<div class="second-menu-name">面、粉</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="c09aa56562674f5ba317e86a832ea82b#2">
+                                		<img alt="" class="second-menu-img" src="images/2ae45db251aac0e39be9691a3dab0492..jpg">
+                                		<div class="second-menu-name">杂粮</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="d994a9c9583746b3a3b8718f542ee385#2">
+                                		<img alt="" class="second-menu-img" src="images/00a16e2912d770436ca0d17c34177eaf..jpg">
+                                		<div class="second-menu-name">干菌菇</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="9cf11400d7214c14b09f1eb7a75c33b3#2">
+                                		<img alt="" class="second-menu-img" src="images/2ba3616b22b3dec89c9a51995ffc1f68..jpg">
+                                		<div class="second-menu-name">干海鲜</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="91efb149fb1f4ba298899ada66ea7141#2">
+                                		<img alt="" class="second-menu-img" src="images/15abebdb2783beaa6c426faf752cbd6d..jpg">
+                                		<div class="second-menu-name">火锅食材</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="c005f814bf0b45ab84da68cebd8e8d87#2">
+                                		<img alt="" class="second-menu-img" src="images/bf4273ccf7c4a84878ae91d6cfe30e64..jpg">
+                                		<div class="second-menu-name">滋补药材</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="309a930d4e5e4c9c8a293bb5e3f8c739#2">
+                                		<img alt="" class="second-menu-img" src="images/d32c5e8e997956d05c524cf513959fee..jpg">
+                                		<div class="second-menu-name">豆制品干货</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="76b723f47e3247f7b7fa1c9e1cd4425a#2">
+                                		<img alt="" class="second-menu-img" src="images/dbaa02ae23747eb2b463e1f43072b8c2..jpg">
+                                		<div class="second-menu-name">蔬菜干货</div>
+                                	</a>
+                                
+                            </div>
+		 	 <div class="menu-pannel">
+                                <!-- 二级菜单 -->
+                                
+                                	<a class="second-menu menuFilterSearch" id="ee70e5cf285a466eb2840a3c7084f88b#2">
+                                		<img alt="" class="second-menu-img" src="images/fcbe8f0ab16bffada88fa16f2f541aab..jpg">
+                                		<div class="second-menu-name">休闲零食</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="f92d3d1fd090466c9196e20ffab3d8c2#2">
+                                		<img alt="" class="second-menu-img" src="images/12a5f4403da6261d3294491f736bf45d..jpg">
+                                		<div class="second-menu-name">坚果蜜饯</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="cf23068f9f0c47ca8894ed669ed62278#2">
+                                		<img alt="" class="second-menu-img" src="images/0367a9f42dea2babb592ae7aa0496ac7..jpg">
+                                		<div class="second-menu-name">方便食品</div>
+                                	</a>
+                                
+                            </div>
+		 	 <div class="menu-pannel">
+                                <!-- 二级菜单 -->
+                                
+                                	<a class="second-menu menuFilterSearch" id="09006#2">
+                                		<img alt="" class="second-menu-img" src="images/10a7b00d05c54113e25be16b8962f9f8..png">
+                                		<div class="second-menu-name">酱油</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="7e0a47b2e020480f9f20396e62af310c#2">
+                                		<img alt="" class="second-menu-img" src="images/ab3060c7b2efd5d20b656e4a78d4292a..jpg">
+                                		<div class="second-menu-name">豆瓣</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="09005#2">
+                                		<img alt="" class="second-menu-img" src="images/eaef83991ffa842c8b17c1d188aee916..png">
+                                		<div class="second-menu-name">食醋</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="09003#2">
+                                		<img alt="" class="second-menu-img" src="images/a28088e20a52196aff23b064779b2623..png">
+                                		<div class="second-menu-name">香油</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="09002#2">
+                                		<img alt="" class="second-menu-img" src="images/61afaac2503ff4409b692fb8a1955ab7..png">
+                                		<div class="second-menu-name">调味料酒</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="09004#2">
+                                		<img alt="" class="second-menu-img" src="images/a72d04d99020b691df67070a7dd24ac5..png">
+                                		<div class="second-menu-name">蒸鱼豉油</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="09001#2">
+                                		<img alt="" class="second-menu-img" src="images/fdceb99c1ccbfe3aaa203d2f2c7f9891..jpg">
+                                		<div class="second-menu-name">蚝油</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="319c4cb017674614bdcf9850e1fe17d9#2">
+                                		<img alt="" class="second-menu-img" src="images/95b0f7d4372c51eed8fc1f98465b9f53..jpg">
+                                		<div class="second-menu-name">调味酱</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="d4807120ed6f468c870c591f72695e41#2">
+                                		<img alt="" class="second-menu-img" src="images/c65f2c8239dfecb243cc50005f78e699..jpg">
+                                		<div class="second-menu-name">酱菜、泡菜</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="0fc9d34d9fa44e3f8fd0dbd772c27aae#2">
+                                		<img alt="" class="second-menu-img" src="images/5bb282ecac55c6f779590a528ecdfec7..jpg">
+                                		<div class="second-menu-name">海带丝</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="3b0bd29003b64fb18072642495e0f267#2">
+                                		<img alt="" class="second-menu-img" src="images/056ef1203b304f446bf4f7bbebf8d5da..jpg">
+                                		<div class="second-menu-name">豆腐乳</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="707e3fb67e0e4af18fd0f19b6acef9ed#2">
+                                		<img alt="" class="second-menu-img" src="images/fffec14b830b2cdeb9c43ed53e068a0e..jpg">
+                                		<div class="second-menu-name">榨菜</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="893bc82bde3f483fa952ce5536a414e1#2">
+                                		<img alt="" class="second-menu-img" src="images/6e67b80b573c63a0f5e41b5d94ca10b7..png">
+                                		<div class="second-menu-name">什锦</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="5abef671c823446b8ce5d5c75e14ed8a#2">
+                                		<img alt="" class="second-menu-img" src="images/2df79b713f15e40be6bbb69a89e8e827..jpg">
+                                		<div class="second-menu-name">调味料</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="b0d53e8d82534ff99fbafc3d5d29bdd4#2">
+                                		<img alt="" class="second-menu-img" src="images/aed2aa27b28095904f9241090fae7178..jpg">
+                                		<div class="second-menu-name">干锅料</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="4fce76c6256e426da1578b972f85c757#2">
+                                		<img alt="" class="second-menu-img" src="images/983601199087a754d0eed27f1685846f..jpg">
+                                		<div class="second-menu-name">鱼锅料</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="b79d76c05f2742029aa481b402d1259e#2">
+                                		<img alt="" class="second-menu-img" src="images/ba3c9730fa723a6bf44455cce441c8a2..jpg">
+                                		<div class="second-menu-name">火锅油碟</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="337ee1a2b8244ac793b5c88ac5d08df6#2">
+                                		<img alt="" class="second-menu-img" src="images/6cf1f8d1fb4415bf413e6b2a9b376cdd..jpg">
+                                		<div class="second-menu-name">美味清汤</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="c62b719cf25844f49a1d8d7d06c6281d#2">
+                                		<img alt="" class="second-menu-img" src="images/4c38a5a43a9db08d7bb668a8e138e181..jpg">
+                                		<div class="second-menu-name">牛油火锅底料</div>
+                                	</a>
+                                
+                                	<a class="second-menu menuFilterSearch" id="f72dc919fc1d415d9e3e8e8a446afa52#2">
+                                		<img alt="" class="second-menu-img" src="images/9bf1f30a7e99eaa605c9b99d29258fad..jpg">
+                                		<div class="second-menu-name">清油火锅底料</div>
+                                	</a>
+                                
+                            </div>
+		 	 <div class="menu-pannel">
+   
+            	<a class="second-menu menuFilterSearch" id="2b387245ad5c4d13bb71f022fda815fc#2">
+            		<img alt="" class="second-menu-img" src="images/c513bf2fee149b0d03d3be19ac5c795c..jpg">
+            		<div class="second-menu-name">儿童牛奶</div>
+            	</a>
+            
+            	<a class="second-menu menuFilterSearch" id="7d0bb530ac254370a5bce9c804102772#2">
+            		<img alt="" class="second-menu-img" src="images/cbd44d1b7de901989ad390cf80b39c56..jpg">
+            		<div class="second-menu-name">酸奶</div>
+            	</a>
+            
+            	<a class="second-menu menuFilterSearch" id="a7b98eed8d7d479d914fd5cdb5bc2b54#2">
+            		<img alt="" class="second-menu-img" src="images/cce0dd877e27064d11f00e808204f2cb..jpg">
+            		<div class="second-menu-name">牛奶饮品</div>
+            	</a>
+            
+            	<a class="second-menu menuFilterSearch" id="4cf6504563644ea1acd42a00f3dfb936#2">
+            		<img alt="" class="second-menu-img" src="images/6de93390fcbbe3bb50e10dac55a105b3..jpg">
+            		<div class="second-menu-name">碳酸饮料</div>
+            	</a>
+            
+            	<a class="second-menu menuFilterSearch" id="30240db783bd4a6e9bcbbf8dda58fc85#2">
+            		<img alt="" class="second-menu-img" src="images/b4514962b0064101efd6acb4861f5feb..jpg">
+            		<div class="second-menu-name">果蔬蛋白饮料</div>
+            	</a>
+            
+            	<a class="second-menu menuFilterSearch" id="ed87c6a60c5c40e8958f51bd9b5e8bba#2">
+            		<img alt="" class="second-menu-img" src="images/632179f448f408dfe1d4f258f3e3e957..jpg">
+            		<div class="second-menu-name">饮用水</div>
+            	</a>
+            
+            	<a class="second-menu menuFilterSearch" id="68a62bce7921440cbdb426301a07d093#2">
+            		<img alt="" class="second-menu-img" src="images/29cffa3d8bb85938673b46cd7b03af73..png">
+            		<div class="second-menu-name">茶饮料</div>
+            	</a>
+            
+            	<a class="second-menu menuFilterSearch" id="671ac4e68b01451c83d8e170e33f3e79#2">
+            		<img alt="" class="second-menu-img" src="images/cbf6099f7dc498413b325583889f75b1..jpg">
+            		<div class="second-menu-name">功能饮料</div>
+            	</a>
+            
+            	<a class="second-menu menuFilterSearch" id="3182135d8b444972b9cb5f8c5dac3b11#2">
+            		<img alt="" class="second-menu-img" src="images/22ba2e067fa2951724370f82cfff9199..jpg">
+            		<div class="second-menu-name">酒饮类</div>
+            	</a>
+            
+            	<a class="second-menu menuFilterSearch" id="ce13f545925c4cf3b4303bc28d004d7e#2">
+            		<img alt="" class="second-menu-img" src="images/4155239509da69c6d8c48fc07827cc24..jpg">
+            		<div class="second-menu-name">组合饮料</div>
+            	</a>
+                                
+                            </div>
+		 </div>
+         
+         
+         
+     </div>    
+</nav>
+
+
+<!--**************************************************
+	网站广告
+	
+*************************************************************-->
+
+<div class="banner">
+	<div class="lbslide">
+		<ul>    
+	<li><img src="images/banner1.jpg"/></li>
+	<li><img src="images/banner2.jpg"/></li>
+	<li><img src="images/banner3.jpg"/></li>
+	<li><img src="images/banner4.jpg"/></li>
+		</ul>
+	</div>
+	
+</div>
+
+<!--**************************************************
+	网站尾部
+	
+*************************************************************-->
+
+<footer>
 		<div class="footer_top">
 			<ul class="footer-list">
                 <li><img src="images/1.png" class="footer-img-top"></li>

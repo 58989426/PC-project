@@ -1,0 +1,94 @@
+nav {
+  height: 34px;
+  background: white;
+  border-bottom: 2px solid #36c573;
+  height: 34px;
+  position: relative; }
+  nav #menu_detail {
+    position: absolute;
+    left: 210px;
+    display: none;
+    top: 33px;
+    background: white;
+    width: 1017px;
+    min-height: 361px;
+    border: 1px solid #36c573;
+    z-index: 2; }
+    nav #menu_detail .menu-pannel {
+      text-align: left;
+      float: left;
+      padding: 20px;
+      height: 360px;
+      width: 1017px; }
+      nav #menu_detail .menu-pannel .second-menu {
+        display: inline-block;
+        margin-right: 48px;
+        margin-top: 15px; }
+        nav #menu_detail .menu-pannel .second-menu .second-menu-img {
+          width: 70px;
+          height: 70px;
+          cursor: pointer;
+          border-radius: 50%; }
+        nav #menu_detail .menu-pannel .second-menu .second-menu-name {
+          font-size: 14px;
+          font-weight: bold;
+          color: #666666;
+          text-align: center;
+          line-height: 14px;
+          padding-top: 5px;
+          margin-bottom: 5px; }
+
+.menu-a {
+  display: block;
+  width: 180px;
+  margin-left: 30px;
+  height: 34px;
+  line-height: 36px;
+  text-align: center;
+  color: white;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  font-size: 18px;
+  background: #36c573; }
+  .menu-a i {
+    margin-left: 25px; }
+
+.menu-a:hover {
+  color: white;
+  text-decoration: none; }
+
+.sp-menu-list {
+  margin-left: 30px;
+  text-align: center;
+  width: 180px;
+  position: relative;
+  top: 0;
+  height: 360px;
+  background: white;
+  opacity: .8;
+  font-size: 14px;
+  z-index: 10; }
+
+.sp-name {
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100;
+  position: relative; }
+  .sp-name a {
+    padding-left: 20px;
+    position: relative;
+    color: #333; }
+  .sp-name #jt_right {
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    float: right;
+    margin: 0px 20px 0 0; }
+
+.sp-name:hover {
+  background: paleturquoise;
+  opacity: .8; }
+
+/*# sourceMappingURL=nav.css.map */
