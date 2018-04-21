@@ -54,7 +54,7 @@
           text-align: center; }
 
 .foot_list {
-  height: 450px;
+  height: 540px;
   width: 1200px;
   margin: 0 auto;
   border: 1px solid lawngreen; }
@@ -72,6 +72,53 @@
     width: 1200px;
     height: 460px; }
     .foot_list .bottom .left_img {
-      width: 450px;
+      width: 400px;
       height: 460px;
-      position: relative; }
+      position: relative;
+      float: left; }
+      .foot_list .bottom .left_img img {
+        position: absolute;
+        left: -50px; }
+    .foot_list .bottom .right_pro {
+      float: right;
+      width: 800px;
+      height: 460px;
+      border: 1px solid lightcoral; }
+      .foot_list .bottom .right_pro .sc_prod {
+        height: 230px;
+        width: 199px;
+        float: left;
+        border-bottom: 1px solid #C0C0C0;
+        border-right: 1px solid #C0C0C0; }
+        .foot_list .bottom .right_pro .sc_prod .prod_pic {
+          height: 180px;
+          width: 199px; }
+          .foot_list .bottom .right_pro .sc_prod .prod_pic img {
+            height: 160px;
+            width: 160px;
+            margin-left: 20px;
+            margin-top: 10px; }
+        .foot_list .bottom .right_pro .sc_prod p {
+          height: 25px;
+          line-height: 25px;
+          text-align: center;
+          font-size: 16px;
+          color: black; }
+        .foot_list .bottom .right_pro .sc_prod span {
+          display: block;
+          height: 25px;
+          line-height: 25px;
+          text-align: center;
+          color: hotpink;
+          font-size: 14px; }
+        .foot_list .bottom .right_pro .sc_prod .jr_car {
+          display: block;
+          width: 200px;
+          color: #333;
+          height: 50px;
+          text-align: center;
+          line-height: 50px;
+          background: #ffc000;
+          font-weight: bold;
+          font-size: 16px;
+          display: none; }
