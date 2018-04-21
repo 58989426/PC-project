@@ -1,6 +1,77 @@
+@charset "UTF-8";
 .main_content .goods_hot {
   height: 275px;
   margin: 0 auto; }
   .main_content .goods_hot .logo_images {
     height: 43px;
-    text-align: center; }
+    text-align: center;
+    position: relative;
+    top: 15px; }
+  .main_content .goods_hot .hot-list {
+    height: 230px;
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid palegreen; }
+    .main_content .goods_hot .hot-list #recommendDiv {
+      width: 1200px; }
+      .main_content .goods_hot .hot-list #recommendDiv .goods_rx {
+        width: 190px;
+        position: relative;
+        float: left; }
+        .main_content .goods_hot .hot-list #recommendDiv .goods_rx .goods_box {
+          display: block;
+          height: 230px;
+          width: 190px;
+          border-right: 1px solid #CCCCCC; }
+          .main_content .goods_hot .hot-list #recommendDiv .goods_rx .goods_box .hot-img {
+            height: 190px;
+            width: 190px; }
+            .main_content .goods_hot .hot-list #recommendDiv .goods_rx .goods_box .hot-img img {
+              margin-top: 20px;
+              margin-left: 20px; }
+          .main_content .goods_hot .hot-list #recommendDiv .goods_rx .goods_box p {
+            line-height: 20px;
+            height: 20px;
+            text-align: center; }
+          .main_content .goods_hot .hot-list #recommendDiv .goods_rx .goods_box span {
+            display: block;
+            line-height: 20px;
+            height: 20px;
+            color: hotpink;
+            text-align: center; }
+        .main_content .goods_hot .hot-list #recommendDiv .goods_rx .join_car {
+          display: none;
+          position: absolute;
+          top: 230px;
+          left: 0;
+          color: #333;
+          width: 190px;
+          height: 50px;
+          line-height: 50px;
+          background: #ffc000;
+          font-weight: bold;
+          font-size: 16px;
+          text-align: center; }
+
+.foot_list {
+  height: 450px;
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid lawngreen; }
+  .foot_list .top {
+    height: 80px;
+    border: 1px solid lightcoral;
+    padding-top: 45px; }
+    .foot_list .top .title-name {
+      font-size: 24px;
+      margin: 0 8px 0 45px; }
+    .foot_list .top .title-ad {
+      font-family: "楷体";
+      font-size: 16px; }
+  .foot_list .bottom {
+    width: 1200px;
+    height: 460px; }
+    .foot_list .bottom .left_img {
+      width: 450px;
+      height: 460px;
+      position: relative; }
