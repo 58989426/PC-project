@@ -1,0 +1,20 @@
+{
+	"res_code":"0",
+	"res_error":"",
+	"res_body":{
+		"products":[
+			{"pid":1, "title":"享口福  红糖锅盔  袋装  360g", "price":320, "img":"images/pic2.png"},
+			{"pid":2, "title":"【预售】【A级】精瘦肉 250/g份【银犁小鲜肉】", "price":340, "img":"images/pic3.png"},
+			{"pid":3, "title":"开背游龙斑 约470g/袋", "price":250, "img":"images/pic4.png"},
+			{"pid":4, "title":"【预售】鲜切里脊肉丝 200g/份【银犁小鲜肉】", "price":378, "img":"images/pic5.png"},
+			{"pid":5, "title":"【预售】【A级】里脊肉块 250g/份【银犁小鲜肉】", "price":428, "img":"images/pic6.png"}
+			{"pid":6, "title":"糖心皮蛋 2个/份", "price":250, "img":"images/pic4.png"},
+			{"pid":7, "title":"青椰 1个装", "price":378, "img":"images/pic5.png"},
+			{"pid":8, "title":"花中花 长粒香米 2.5kg", "price":428, "img":"images/pic6.png"}
+			{"pid":9, "title":"伊利QQ星儿童成长牛奶全聪型190ml*15盒", "price":428, "img":"images/pic6.png"}
+			{"pid":10, "title":"加拿大北极贝 200克/袋", "price":250, "img":"images/pic4.png"},
+			{"pid":4, "title":"耗儿鱼（中号）350克/盒", "price":378, "img":"images/pic5.png"}
+			
+		]
+	}
+}

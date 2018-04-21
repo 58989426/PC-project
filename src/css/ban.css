@@ -1,8 +1,9 @@
 #carousel-example-generic {
   height: 360px;
-  width: 1260px; }
+  width: 1280px; }
   #carousel-example-generic img {
-    height: 360px; }
+    height: 360px;
+    width: 100%; }
   #carousel-example-generic ol li {
     margin: 0 5px;
     background: white; }
