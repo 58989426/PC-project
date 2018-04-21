@@ -10,8 +10,9 @@
 	<link rel="stylesheet" type="text/css" href="css/nav.css"/>
 	<link rel="stylesheet" type="text/css" href="/lib/font/iconfont.css"/>
 	<link rel="stylesheet" type="text/css" href="css/ban.css" />
-	<script src="lib/jquery/jquery-1.12.4.min.js"></script>
-	<script src="lib/bootstr/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<script src="lib/requirejs/require.js" data-main = "js/index"></script>
+	
 	
 </head>
 <body>
@@ -19,70 +20,13 @@
 	网站头部
 	
 *************************************************************-->
-	<header>
-		<div class="sp-header-bg">
-	    	<div class="sp-wrap tool-nav">
-	        <ul class="sp-left">
-	            <li>
-	                <span>送至:</span>
-	                <span>四川成都市</span>
-	            </li>
-	        </ul>
-	        <ul class="sp-right site-nav sp-position">
-                <li>
-                    <a href="/security/login">登录</a>
-                </li>
-                <li class="spacer"></li>
-	            
-	            <li>
-	                <a href="/customer/order?type=2">我的订单</a>
-	            </li>
-	            <li class="spacer"></li>
-				<li class="s_app">
-	                    <a href="javascript:void(0)">银犁APP</a>
-	            </li>
-	            <li class="spacer"></li>
-	            <li class="s_tel">
-	                <a href="javascript:void(0)">客服</a>
-	            </li>
-	            
-	        </ul>
-	    </div>
-    </div>
-    
-    <!-- 搜索栏开始-->
-    <div class="header_nav">
-    	<div class="header_logo">
-    		<img src="images/PC-LOGO.png"/>
-    	</div>
-    	
-    	<!--搜索框-->
-    	<div class="sea_bar">
-    		<input type="text"  class="sea_keyword" value="" />
-    		<button id="searchBtn" class="search-btn">搜索</button>
-    	</div>
-    	 <!-- 购物车-->
-        <div class="shopping-car ">
-			
-			<div class="shopping-btn">
-				<!-- 购物车图标-->
-				<i class="glyphicon glyphicon-shopping-cart" id="car_cart"></i>
-				<!-- 个人购物车链接 -->
-				<a href="/customer/cart/commodity">我的购物车</a>
-				<!-- 大于图标-->
-				<i class="glyphicon glyphicon-menu-right" id="cart_right"></i>
-				<!-- 数量上浮图标-->
-				<i class="product_number" id="cartNum">0</i>
-			</div>
-		</div>
-    </div>
-   
-	</header>
+	<div class="header">
+		
+	</div>
 	
 
 <!--**************************************************
 	网站导航
-	
 *************************************************************-->
 <nav>
 	<a href="/" class="menu-a">
@@ -738,7 +682,7 @@
 
 
 <!--**************************************************
-	网站广告
+	网站广告图
 	
 *************************************************************-->
 
@@ -799,98 +743,46 @@
 	
 *************************************************************-->
 
-<main>	
-	<div class="choiceness">
-		<div class="img">
-			<img src="images/sale-hot.png"/>
-		</div>
-		<div class="pic">
-			
-		</div>
-	</div>
+<div class="main_content">	
+	 <!--热销商品-->
+        <div class="goods_hot">
+            <div class="logo_images"><img src="images/sale-hot.png"></div>
+            <div class="hot-list  box-shadow" >  
+            <div id="recommendDiv">
+ 
+ <!-- art-Template 模板 -->
 
-</main>
-
-
-
-
-
-
+ 			<!--<script type="text/html" id="prod_temp">
+ 			  {{ each products prod }}-->
+		        <div class="goods_rx">
+		            <a href="/" target="_blank" class="goods-box" >
+		                <div class="hot-img sp-center">
+		                    <img src="/" class="jumptoCommdity"/>
+		                </div>
+		                <p class="goods-name">开背游龙斑 约470g/袋</p>
+		                
+		                <span>¥</span>
+		               
+		                <input type="hidden" name="isPresell" value='false'/>
+		            </a>
+		            <a href="javascript:void(0);" class="join-car">加入购物车
+		                <input type="hidden" name="comCodePage" id="code_jr"/>
+		            </a>
+		        </div>
+             <!--{{/each}}
+			</script>-->
+			<div class="change_goods">
+				djlsak
+			</div>
+            </div>
+        </div>
+	
+</div>
 
 
 <!--**************************************************
 	网站尾部
-	
 *************************************************************-->
-
-<footer>
-		<div class="footer_top">
-			<ul class="footer-list">
-                <li><img src="images/1.png" class="footer-img-top"></li>
-                <li><img src="images/2.png" class="footer-img-top"></li>
-                <li><img src="images/3.png" class="footer-img-top"></li>
-                <li><img src="images/4.png" class="footer-img-top"></li>
-            </ul>
-		</div>    
-    	
-    	<div class="sp-wrap main_text">
-        <div class="help-list sp-clear help-list-lg">
-            <div class="help-list-nav">
-                <p class="help-title">新手指南</p>
-                <ul class="help-guild-list">
-                    <li><a href="/novice_guide?pageName=novice_guide">用户注册</a></li>
-                    <li><a href="/help_shop?pageName=novice_guide">购物流程</a></li>
-                    <li><a href="javascript:void(0)">订购方式</a></li>
-                    <li><a href="/help_update?pageName=novice_guide">设置密码</a></li>
-                </ul>
-            </div>
-            <div class="help-list-nav">
-                <p class="help-title">付款方式</p>
-                <ul class="help-guild-list">
-                    <li><a href="/pay_way?pageName=pay">支付方式</a></li>
-                    <li><a href="/recharge_des?pageName=pay">充值说明/储值卡说明</a></li>
-                </ul>
-            </div>
-            <div class="help-list-nav">
-                <p class="help-title">配送方式</p>
-                <ul class="help-guild-list">
-                    <li><a href="/send_ways?pageName=send_ways">配送运费</a></li>
-                    <li><a href="/send_ways?pageName=send_ways">配送范围</a></li>
-                    <li><a href="/send_ways?pageName=send_ways">配送时间</a></li>
-                    <li><a href="/send_ways?pageName=send_ways">站点列表</a></li>
-                </ul>
-            </div>
-            <div class="help-list-nav">
-                <p class="help-title">售后服务</p>
-                <ul class="help-guild-list">
-                    <li><a href="/replacement_process?pageName=after_sale">换货政策</a></li>
-                    <li><a href="/replacement_process?pageName=after_sale">换货流程</a></li>
-                    <li><a href="/complaint?pageName=after_sale">投诉与建议</a></li>
-                </ul>
-            </div>
-            <div class="help-list-nav">
-                <p class="help-title">关于我们</p>
-                <ul class="help-guild-list">
-                    <li><a href="/company_introduction?pageName=about_us">公司介绍</a></li>
-                    <li><a href="/contact_us?pageName=about_us">联系我们</a></li>
-                    <li><a href="/business_cooperation?pageName=about_us">业务合作</a></li>
-                    <li><a href="/wechat_code?pageName=about_us">微信公众号</a></li>
-                    <li><a href="/app_download?pageName=about_us">APP</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    	
-    	<div class="f_nav">
-        <div class="sp-wrap f_rights">
-            <p class="us-list">
-                <a href="/company_introduction?pageName=company_introduction">关于我们</a>
-                <span>|</span>
-                <a href="/contact_us?pageName=contact_us">联系我们</a>
-            </p>
-            <p>Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2017-2030银犁食品&nbsp;&nbsp;(ylfood.com)&nbsp;&nbsp;&nbsp;All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蜀ICP备:11006129号-3&nbsp;&nbsp;&nbsp;&nbsp;网站统计&nbsp;&nbsp;&nbsp;&nbsp;站长统计</p>
-        </div>
-    </div>
-		</footer>
+<div class="footer"></div>
 </body>
 </html>
