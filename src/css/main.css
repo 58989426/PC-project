@@ -10,10 +10,19 @@
   .main_content .goods_hot .hot-list {
     height: 230px;
     width: 1200px;
-    margin: 0 auto;
-    border: 1px solid palegreen; }
+    margin: 0 auto; }
     .main_content .goods_hot .hot-list #recommendDiv {
-      width: 1200px; }
+      width: 1200px;
+      height: 230px; }
+      .main_content .goods_hot .hot-list #recommendDiv .change_goods {
+        height: 230px;
+        width: 60px;
+        float: right;
+        text-align: center;
+        line-height: 230px; }
+        .main_content .goods_hot .hot-list #recommendDiv .change_goods i {
+          font-size: 35px;
+          font-weight: 800; }
       .main_content .goods_hot .hot-list #recommendDiv .goods_rx {
         width: 190px;
         position: relative;
@@ -27,6 +36,8 @@
             height: 190px;
             width: 190px; }
             .main_content .goods_hot .hot-list #recommendDiv .goods_rx .goods_box .hot-img img {
+              height: 150px;
+              width: 150px;
               margin-top: 20px;
               margin-left: 20px; }
           .main_content .goods_hot .hot-list #recommendDiv .goods_rx .goods_box p {
@@ -56,11 +67,9 @@
 .foot_list {
   height: 540px;
   width: 1200px;
-  margin: 0 auto;
-  border: 1px solid lawngreen; }
+  margin: 0 auto; }
   .foot_list .top {
     height: 80px;
-    border: 1px solid lightcoral;
     padding-top: 45px; }
     .foot_list .top .title-name {
       font-size: 24px;
@@ -82,8 +91,7 @@
     .foot_list .bottom .right_pro {
       float: right;
       width: 800px;
-      height: 460px;
-      border: 1px solid lightcoral; }
+      height: 460px; }
       .foot_list .bottom .right_pro .sc_prod {
         height: 230px;
         width: 199px;

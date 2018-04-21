@@ -1,6 +1,7 @@
 @charset "UTF-8";
-footer {
-  background: white; }
+.footer {
+  background: white;
+  margin-top: 25px; }
 
 .footer_top {
   height: 90px;

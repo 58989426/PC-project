@@ -1,5 +1,6 @@
 @charset "UTF-8";
  .main_content{
+     
         .goods_hot{ 
      
         height: 275px;
@@ -14,9 +15,22 @@
             height: 230px;
             width: 1200px;
             margin: 0 auto;
-            border: 1px solid palegreen;
+           
          #recommendDiv{
              width: 1200px;
+             height: 230px;
+            
+            .change_goods{
+                height: 230px;
+                width: 60px;
+                float: right;
+                text-align: center;
+                line-height: 230px;
+                i{
+                    font-size: 35px;
+                    font-weight:800 ;
+                }
+            }
            .goods_rx{
              width: 190px;
              position: relative;
@@ -30,6 +44,8 @@
                      height: 190px;
                      width: 190px;
                      img{
+                         height: 150px;
+                         width: 150px;
                          margin-top: 20px;
                          margin-left: 20px;
                      }
@@ -78,10 +94,10 @@
     height: 540px;
     width: 1200px;
     margin: 0 auto;
-    border: 1px solid lawngreen;
+    
     .top{
         height: 80px;
-        border: 1px solid lightcoral;
+        
         padding-top: 45px;
         .title-name{
         font-size: 24px;
@@ -110,7 +126,6 @@
             float: right;
             width: 800px;
             height: 460px;
-            border: 1px solid lightcoral;
             .sc_prod{
                 height: 230px;
                 width: 199px;

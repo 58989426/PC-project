@@ -752,103 +752,26 @@
 	 
 	 <!-- art-Template 模板 -->
 	
-	 			<!--<script type="text/html" id="prod_temp">
-	 			  {{ each products prod }}-->
+	 			<script type="text/html" id="prod_temp">
+	 			  {{ each products prod }}
 			        <div class="goods_rx">
 			            <a href="/" target="_blank" class="goods_box" >
 			                <div class="hot-img ">
-			                    <img src="images/pic11.png" class="jumptoCommdity"/>
+			                    <img src="{{prod.img}}" class="jumptoCommdity"/>
 			                </div>
-			                <p class="goods-name">开背游龙斑 约470g/袋</p>
+			                <p class="goods-name">{{prod.title}}</p>
 			                
-			                <span>¥</span>
-			               
-			                <input type="hidden" name="isPresell" value='false'/>
+			                <span>¥{{prod.price}}</span>
 			            </a>
 			            <a href="javascript:void(0);" class="join_car">加入购物车
 			                <input type="hidden" name="comCodePage" id="code_jr"/>
 			            </a>
 			        </div>
-	             <!--{{/each}}
-				</script>-->
-					 <div class="goods_rx">
-			            <a href="/" target="_blank" class="goods_box" >
-			                <div class="hot-img ">
-			                    <img src="images/pic11.png" class="jumptoCommdity"/>
-			                </div>
-			                <p class="goods-name">开背游龙斑 约470g/袋</p>
-			                
-			                <span>¥</span>
-			               
-			                <input type="hidden" name="isPresell" value='false'/>
-			            </a>
-			            <a href="javascript:void(0);" class="join_car">加入购物车
-			                <input type="hidden" name="comCodePage" id="code_jr"/>
-			            </a>
-			        </div>
-			         <div class="goods_rx">
-			            <a href="/" target="_blank" class="goods_box" >
-			                <div class="hot-img ">
-			                    <img src="images/pic11.png" class="jumptoCommdity"/>
-			                </div>
-			                <p class="goods-name">开背游龙斑 约470g/袋</p>
-			                
-			                <span>¥</span>
-			               
-			                <input type="hidden" name="isPresell" value='false'/>
-			            </a>
-			            <a href="javascript:void(0);" class="join_car">加入购物车
-			                <input type="hidden" name="comCodePage" id="code_jr"/>
-			            </a>
-			        </div>
-			         <div class="goods_rx">
-			            <a href="/" target="_blank" class="goods_box" >
-			                <div class="hot-img ">
-			                    <img src="images/pic11.png" class="jumptoCommdity"/>
-			                </div>
-			                <p class="goods-name">开背游龙斑 约470g/袋</p>
-			                
-			                <span>¥</span>
-			               
-			                <input type="hidden" name="isPresell" value='false'/>
-			            </a>
-			            <a href="javascript:void(0);" class="join_car">加入购物车
-			                <input type="hidden" name="comCodePage" id="code_jr"/>
-			            </a>
-			        </div>
-			         <div class="goods_rx">
-			            <a href="/" target="_blank" class="goods_box" >
-			                <div class="hot-img ">
-			                    <img src="images/pic11.png" class="jumptoCommdity"/>
-			                </div>
-			                <p class="goods-name">开背游龙斑 约470g/袋</p>
-			                
-			                <span>¥</span>
-			               
-			                <input type="hidden" name="isPresell" value='false'/>
-			            </a>
-			            <a href="javascript:void(0);" class="join_car">加入购物车
-			                <input type="hidden" name="comCodePage" id="code_jr"/>
-			            </a>
-			        </div>
-			         <div class="goods_rx">
-			            <a href="/" target="_blank" class="goods_box" >
-			                <div class="hot-img ">
-			                    <img src="images/pic11.png" class="jumptoCommdity"/>
-			                </div>
-			                <p class="goods-name">开背游龙斑 约470g/袋</p>
-			                
-			                <span>¥</span>
-			               
-			                <input type="hidden" name="isPresell" value='false'/>
-			            </a>
-			            <a href="javascript:void(0);" class="join_car">加入购物车
-			                <input type="hidden" name="comCodePage" id="code_jr"/>
-			            </a>
-			        </div>
-			        
+	             {{/each}}
+				</script>
+
 					<div class="change_goods">
-						djlsak
+						<i class="iconfont icon-jiantou"></i>
 					</div>
 	            </div>
             
@@ -962,6 +885,322 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="foot_list">
+			<div class="top">
+				 <span class="title-name">水果专区</span>
+                 <span class="title-ad ">/ 新鲜水果每一天，健康生活每一刻</span>
+			</div>
+			
+			<div class="bottom">
+				<div class="left_img">
+					<img src="images/fruit.png"/>
+				</div>
+				<div class="right_pro">
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					
+				
+				</div>
+			</div>
+		</div>
+
+		<div class="foot_list">
+			<div class="top">
+				 <span class="title-name">海鲜水产</span>
+                 <span class="title-ad ">/ 鲜活速冻，安全可溯</span>
+			</div>
+			
+			<div class="bottom">
+				<div class="left_img">
+					<img src="images/haixuan.png"/>
+				</div>
+				<div class="right_pro">
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					
+				
+				</div>
+			</div>
+		</div>
+
+		<div class="foot_list">
+			<div class="top">
+				 <span class="title-name">精选肉类</span>
+                 <span class="title-ad ">/ 精选肉类 严格质检 全程冷链</span>
+			</div>
+			
+			<div class="bottom">
+				<div class="left_img">
+					<img src="images/roudan.png"/>
+				</div>
+				<div class="right_pro">
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					<div class="sc_prod">
+						<div class="prod_pic">
+							<img src="images/pic21.jpg"/>
+						</div>
+						<p>熊猫肉</p>
+						<span>￥</span>
+						 <a href="javascript:void(0);" class="jr_car">
+						 	加入购物车
+		            	</a>
+					</div>
+					
+					
+				
+				</div>
+			</div>
+		</div>
+		
 </div>
 
 <!--**************************************************

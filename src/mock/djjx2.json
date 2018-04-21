@@ -1,0 +1,19 @@
+
+			
+
+{
+	"res_code":"0",
+	"res_error":"",
+	"res_body":{
+		"products":[
+			{"pid":7, "title":"青椰 1个装", "price":38, "img":"images/pic117.png"},
+			{"pid":8, "title":"花中花 长粒香米 2.5kg", "price":28, "img":"images/pic118.png"},
+			{"pid":9, "title":"蒙牛特仑苏纯牛奶250mL*12盒 整箱", "price":42, "img":"images/pic119.png"},
+			{"pid":10, "title":"伊利QQ星儿童190ml*15盒", "price":42, "img":"images/pic122.png"},
+			{"pid":11, "title":"加拿大北极贝 200克/袋", "price":20, "img":"images/pic110.png"},
+			{"pid":12, "title":"耗儿鱼（中号）350克/盒", "price":38, "img":"images/pic121.png"}
+			
+			
+		]
+	}
+}
