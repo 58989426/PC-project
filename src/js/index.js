@@ -17,11 +17,34 @@ require(["config"], function(){
 	  })
 	  
 	  //异步加载产品列表
-	  $.getJSON("/mock/lb1.json",function(data1){
+	  $.getJSON("/mock/lb1.json",function(data){
 	  	//使用arttemplate渲染
-	  	let html = template("prod_temp1",{products : data1.res_body.products});
+	  	let html = template("prod_temp1",{products : data.res_body.products});
 	  	//显示
 	  	$(".prod_list1").prepend(html);
+	  })
+	  
+	  
+	  $.getJSON("/mock/lb2.json",function(data1){
+	  	//使用arttemplate渲染
+	  	let html = template("prod_temp2",{products : data1.res_body.products});
+	  	//显示
+	  	$(".prod_list2").prepend(html);
+	  })
+	  
+	  
+	  $.getJSON("/mock/lb3.json",function(data1){
+	  	//使用arttemplate渲染
+	  	let html = template("prod_temp3",{products : data1.res_body.products});
+	  	//显示
+	  	$(".prod_list3").prepend(html);
+	  })
+	  
+	  $.getJSON("/mock/lb4.json",function(data1){
+	  	//使用arttemplate渲染
+	  	let html = template("prod_temp4",{products : data1.res_body.products});
+	  	//显示
+	  	$(".prod_list4").prepend(html);
 	  })
 	});
 });
