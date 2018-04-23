@@ -1,6 +1,130 @@
 @charset "UTF-8";
 .prod_xq{
+    margin-top: 50px;
     height:520px;
     width:1200px;
-    border:1px solid #f00;
+//  border:1px solid #f00;
+    margin: 0 auto;
+    .left_pic{
+        float: left;
+        width: 420px;
+        height: 520px;
+    }
+    .left_prod{
+     float: right;
+     height: 520px;
+     width: 780px;
+//   border: 1px solid palegreen;   
+    padding-left: 30px;
+        .pro-title{
+            height: 50px;
+            line-height: 50px;
+            padding-bottom: 3px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #cmd-comment{
+            height: 20px;
+            line-height: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+        .discount-per{
+            margin-top: 10px;
+            background: #fffbef;
+            height: 100px;
+            padding-top: 14px;
+            .discount{
+                padding-left: 15px;
+                .color-tint-gary{
+                    height: 40px;
+                line-height: 40px;
+                font-size: 14px;
+                }
+                #sale-price{
+                    font-size: 18px;
+                    color: #ff4e00;
+                    font-weight: bold;
+                    height: 40px;
+                line-height: 40px;
+                }
+            }
+            
+            .average{
+                padding-left: 15px;
+                .y_tint-gray{
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 14px; 
+                }
+                
+                #avg-price{
+                    font-size: 14px;
+                    text-decoration: line-through;
+                }
+                .price-avg{
+                    padding-left: 40px;
+                    font-size: 14px;
+                }
+            }
+        }
+       
+       .store{
+           height: 91px;
+           border-bottom: 1px solid #C0C0C0;
+           .store-prompt{
+               padding-left: 15px;
+               height: 45px;
+               line-height: 45px;
+               font-size: 14px;
+           }
+           .store_ser{
+                padding-left: 15px;
+               height: 45px;
+               line-height: 45px;
+               font-size: 14px;
+           }
+       }
+       
+       .choose_prod{
+           overflow: hidden;
+           padding-left: 15px;
+           height: 160px;
+           .choose_top{
+               width: 780px;
+               height: 45px;
+               line-height: 45px;
+               float: left;
+               .choose-kinds{
+                   float: left;
+                   padding-right: 12px;
+               }
+               .choose_booder{
+                   float: left;
+                   height: 30px;
+                   margin-top: 7px;
+                   width: 80px;
+                   line-height: 30px;
+                   border: 2px solid #FFFF00;
+                   text-align: center;
+                 display: block;
+                 
+               }
+           }
+           .prod_mount{
+               margin-top: 70px;
+               height: 80px;
+               line-height: 80px;
+               .shuliang{
+                   float: left;
+                   display: block;
+               }
+               .prod-count{
+                   float: left;
+                   
+               }
+           }
+       }
+        
+    }
 }
