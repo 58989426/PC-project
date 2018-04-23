@@ -1,6 +1,6 @@
 require(["config"], function(){
-	require(["jquery","template","boots" , "loadHF"], function($,template){
+	require(["jquery","template","boots" ,"loadHF"], function($,template){
 
-	  })
+	
 	});
 });
