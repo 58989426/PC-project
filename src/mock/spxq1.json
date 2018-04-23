@@ -3,7 +3,7 @@
 	"res_error":"",
 	"res_body":{
 		"products":[
-			{"pid":111, "title":"享口福  红糖锅盔  袋装  360g", "price":30, "img":"images/pic111.jpg","href":"html/detail.html","yuanjia":56,"titel2":"纯正红糖，甜而不腻，精选优质小麦粉，吃的放心","img2":"images/big11.jpg"}
+			{"pid":1, "title":"享口福  红糖锅盔  袋装  360g", "price":30, "img":"images/pic111.jpg","yuanjia":56,"titel2":"纯正红糖，甜而不腻，精选优质小麦粉，吃的放心","img2":"images/big11.jpg"}
 
 		]
 	}

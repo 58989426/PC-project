@@ -755,7 +755,7 @@
 	 			<script type="text/html" id="prod_temp">
 	 			  {{ each products prod }}
 			        <div class="goods_rx">
-			            <a href="{{prod.href}}" target="_blank" class="goods_box" >
+			            <a href="{{prod.href}}?{{prod.pid}}" target="_blank" class="goods_box" >
 			                <div class="hot-img ">
 			                    <img src="{{prod.img}}" class="jumptoCommdity"/>
 			                </div>
@@ -766,14 +766,14 @@
 			            <a href="javascript:void(0);" class="join_car">加入购物车
 			                <input type="hidden" name="comCodePage" id="code_jr"/>
 			            </a>
-			            <div class="title2" style="display: none;">
+			            <!--<div class="title2" style="display: none;">
 			            	{{prod.titel2}}
 			            </div>
 			            <div class="yuanjia" style="display: none;">
 			            	{{prod.yuanjia}}
 			            </div>
 			            <img src="{{prod.img2}}" class="img2" style="display: none;"/>
-			            <p class="prod_pid" style="display: none;">{{prod.pid}}</p>
+			            <p class="prod_pid" style="display: none;">{{prod.pid}}</p>-->
 			        </div>
 	             {{/each}}
 				</script>

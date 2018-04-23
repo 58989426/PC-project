@@ -12,19 +12,20 @@ require(["config"], function(){
 	  //事件委派
 	  
 	  
-	   $.getJSON("/mock/djjx.json",function(data){
-	  		$("good_rx").delegate("a","click",function(){
-	  		
+	   $.getJSON("/mock/spxq1.json",function(data){
+	    	console.log(data)
 	  		
 	  })
+	  $(".goods_rx").on("click",function(){
+	  		/*location="../html/detail.html";*/
+	  		console.log("555555")
 	  })
-	  
 	  
 	  //异步加载热销商品
 	  $.getJSON("/mock/djjx.json",function(data){
 	  	//使用arttemplate渲染
 	  	let html = template("prod_temp",{products : data.res_body.products});
-	  	console.log(data)
+	  	
 	  	//显示
 	  	$("#recommendDiv").prepend(html);
 	  })
