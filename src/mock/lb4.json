@@ -1,0 +1,18 @@
+{
+	"res_code":"0",
+	"res_error":"",
+	"res_body":{
+		"products":[
+		{"pid":1, "title":"带皮腿肉 250g ", "price":38, "img":"images/pic51.png"},
+			{"pid":2, "title":"带皮五花 250g ", "price":28, "img":"images/pic52.png"},
+			{"pid":3, "title":"优选鲜肋排 500g/份", "price":42, "img":"images/pic53.png"},
+			{"pid":4, "title":"鲜切里脊肉丝 200g/份", "price":42, "img":"images/pic54.png"},
+			{"pid":5, "title":"【里脊肉块 250g/份", "price":20, "img":"images/pic55.png"},
+			{"pid":6, "title":"优选鲜猪肉馅 250g ", "price":38, "img":"images/pic56.png"},
+			{"pid":7, "title":"精瘦肉 250/g份", "price":38, "img":"images/pic57.png"},
+			{"pid":8, "title":"鲜切纯瘦肉片 200g/份", "price":28, "img":"images/pic58.png"}
+			
+			
+		]
+	}
+}

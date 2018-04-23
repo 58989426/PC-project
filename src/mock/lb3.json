@@ -1,0 +1,18 @@
+{
+	"res_code":"0",
+	"res_error":"",
+	"res_body":{
+		"products":[
+		{"pid":1, "title":"东海小黄花鱼 7-8条/袋 400g", "price":38, "img":"images/pic41.png"},
+			{"pid":2, "title":"冷冻 青口贝  500克/盒", "price":28, "img":"images/pic42.png"},
+			{"pid":3, "title":"宏大  鲜冻开背海鲈鱼 470克以上", "price":42, "img":"images/pic43.png"},
+			{"pid":4, "title":"熟冻小龙虾尾 虾球  300g", "price":42, "img":"images/pic44.png"},
+			{"pid":5, "title":"厄瓜多尔白虾 300g  12-15头", "price":20, "img":"images/pic45.png"},
+			{"pid":6, "title":"银犁食品 熟冻红虾仁 300g  35-40个", "price":38, "img":"images/pic46.png"},
+			{"pid":7, "title":"三都港  大黄花鱼 400g/条", "price":38, "img":"images/pic47.png"},
+			{"pid":8, "title":"加拿大北极贝 200克/袋", "price":28, "img":"images/pic48.png"}
+			
+			
+		]
+	}
+}

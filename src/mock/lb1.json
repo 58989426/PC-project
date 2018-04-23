@@ -1,0 +1,19 @@
+{
+	"res_code":"0",
+	"res_error":"",
+	"res_body":{
+		"products":[
+			{"pid":1, "title":"仔姜 250g/份", "price":38, "img":"images/pic117.png"},
+			{"pid":2, "title":"韭菜 300g/份", "price":28, "img":"images/pic22.png"},
+			{"pid":3, "title":"毛竹笋 700~750g/份", "price":42, "img":"images/pic23.png"},
+			{"pid":4, "title":"空心菜 400g/份", "price":42, "img":"images/pic24.png"},
+			{"pid":5, "title":"姬菇 300g/份", "price":20, "img":"images/pic25.png"},
+			{"pid":6, "title":"生菜 200~300g/份", "price":38,"img":"images/pic26.png"},
+			{"pid":7, "title":"精选大头独蒜 300~350g/份", "price":38, "img":"images/pic27.png"},
+			{"pid":8, "title":"小黄姜 300~350g/份", "price":28, "img":"images/pic28.png"}
+			
+		]
+			
+		
+	}
+}
