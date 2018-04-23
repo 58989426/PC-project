@@ -4,6 +4,19 @@ require(["config"], function(){
 	/*商品放大镜*/
 	$("img").elevateZoom();
 	
+	/*点击加载数据*/
+	/* $.getJSON("/mock/djjx.json",function(data){
+	  	//使用arttemplate渲染
+	  	let html = template("xqprod_temp",{products : data.res_body.products});
+	  	console.log(data)
+	  	//显示
+	  	$(".prod_xq").prepend(html);
+	  })*/
+	 
+	/* $.cookie.json = true;
+	 
+	 let _products = $.cookie("products") || [];*/
+	 
 	/*商品数量的加减*/
 	
 	$(".prod-count").on("click",".btn_add,.btn_mius",function(){
@@ -20,7 +33,7 @@ require(["config"], function(){
 		$("#count-num").val(amount);
 	})
 	
-	
+	/** */
 	
 	});
 });

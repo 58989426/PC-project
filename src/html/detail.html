@@ -21,15 +21,16 @@
 	</div>
 	
 	<!--商品的详情-->
-	<script type="text/html" id="xqprod_temp">
-	 	 {{ each products prod }}
+	
 	<div class="prod_xq">
+		<script type="text/html" id="xqprod_temp">
+	 	 {{ each products prod }}
 		<div class="left_pic">
 			<img src="../{{prod.img2}}" data-zoom-image="../{{prod.img2}}">
 		</div>
 		<div class="left_prod">
 			 <p class="pro-title" id="cmd-title" >{{prod.title}}</p>
-             <p id="cmd-comment" >{{prod.title2}}</p>
+             <p id="cmd-comment" >{{prod.titel2}}</p>
              <div class="discount-per">
                     <p class="discount">
                         <span class="color-tint-gray">折扣价：</span>
@@ -80,9 +81,10 @@
             </div>   
 			  
 		</div>
-	</div>
-	 {{/each}}
+		{{/each}}
 	</script>
+	</div>
+	 
 	<!--
 		
 		异步加载尾部

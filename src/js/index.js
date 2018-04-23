@@ -8,6 +8,18 @@ require(["config"], function(){
 			$(".join_car").css({ "top": "230px", "display": "none" })
 		})*/
 			
+		/*点击图片查看商品详情*/	
+	  //事件委派
+	  
+	  
+	   $.getJSON("/mock/djjx.json",function(data){
+	  		$("good_rx").delegate("a","click",function(){
+	  		
+	  		
+	  })
+	  })
+	  
+	  
 	  //异步加载热销商品
 	  $.getJSON("/mock/djjx.json",function(data){
 	  	//使用arttemplate渲染
