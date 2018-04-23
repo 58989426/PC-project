@@ -3,12 +3,12 @@
 	"res_error":"",
 	"res_body":{
 		"products":[
-			{"pid":1, "title":"享口福  红糖锅盔  袋装  360g", "price":30, "img":"images/pic111.jpg"},
-			{"pid":2, "title":"精瘦肉 250/g份", "price":40, "img":"images/pic112.jpg"},
-			{"pid":3, "title":"开背游龙斑 约470g/袋", "price":20, "img":"images/pic113.jpg"},
-			{"pid":4, "title":"鲜切里脊肉丝 200g/份", "price":38, "img":"images/pic114.jpg"},
-			{"pid":5, "title":"口口脆西瓜 1.35-1.60 kg/个", "price":48, "img":"images/pic115.jpg"},
-			{"pid":6, "title":"糖心皮蛋 2个/份", "price":20, "img":"images/pic116.jpg"}
+			{"pid":1, "title":"享口福  红糖锅盔  袋装  360g", "price":30, "img":"images/pic111.jpg","herf":"html/detail.html"},
+			{"pid":2, "title":"精瘦肉 250/g份", "price":40, "img":"images/pic112.jpg","herf":"html/detail.html"},
+			{"pid":3, "title":"开背游龙斑 约470g/袋", "price":20, "img":"images/pic113.jpg","herf":"html/detail.html"},
+			{"pid":4, "title":"鲜切里脊肉丝 200g/份", "price":38, "img":"images/pic114.jpg","herf":"html/detail.html"},
+			{"pid":5, "title":"口口脆西瓜 1.35-1.60 kg/个", "price":48, "img":"images/pic115.jpg","herf":"html/detail.html"},
+			{"pid":6, "title":"糖心皮蛋 2个/份", "price":20, "img":"images/pic116.jpg","herf":"html/detail.html"}
 			
 			
 		]
