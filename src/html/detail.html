@@ -3,10 +3,90 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Document</title>
-	
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>	
+	<link rel="stylesheet" type="text/css" href="../css/css.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/footer.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="detial_index.css"/>
+	<script src="../lib/requirejs/require.js" data-main = "../js/detail"></script>
 </head>
 <body>
-	<script src="lib/requirejs/require.js" data-main = "js/detail"></script>
-	<h1>dsadsa</h1>
+	<!--
+		
+		异步加载头部
+		
+	-->
+	<div class="header">
+		
+	</div>
+	
+	<!--商品的详情-->
+	<div class="prod_xq">
+		<div class="left_pic">
+			
+		</div>
+		<div class="left_prod">
+			 <p class="pro-title" id="cmd-title" >【预售】鲜切里脊肉丝 200g/份【银犁小鲜肉】</p>
+             <p id="cmd-comment" >选用当日新鲜里脊肉制作，肉丝径宽约0.35cm，长约5cm。</p>
+             <div class="discount-per">
+                    <p class="discount">
+                        <span class="color-tint-gray">折扣价：</span>
+                        <span id = "sale-price" >¥6.20 </span>
+                    </p>
+                    <p class="average">
+                        <span class="y_tint-gray">原&nbsp;&nbsp;&nbsp;价：</span>
+                        <span id = "avg-price">¥7.00 </span>
+                        <span class="price-avg">该价格统计为各大超市及菜市场&nbsp;均价</span>
+                    </p>
+	          </div> 
+	          
+	          
+	           <div class="sp-store">
+                  <p class="sp-store-prompt">成都有货</p>
+                  <p>服&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务：由银犁食品发货，并提供售后服务</p>
+               </div>
+               
+               <div class="choose_prod">
+               		<div class="choose_top">
+               			<div class="choose-kinds">
+                            <span>选择种类：</span>
+                        </div>
+                        <div class="kinds">
+							<span class="choose_booder">
+							<i class="sp-icon icon-confirm"></i>
+								200.0 克
+							</span>
+                        </div>
+               		</div>
+               		<div class="prod_mount">
+               			数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：
+               			 <div class="prod-count">
+                                    <a href="javascript:void(0)" class="btn_mius">-</a>
+                                    <input type="text" value="1" id="count-num"  >
+                                    <a href="javascript:void(0)" class="btn_add">+</a>
+                                
+                            </div>
+               			 <a href="javascript:void(0)" id="buyBtn">
+               			 	立即购买</a>
+                         <a href="javascript:void(0)"  id="cartBtn" >
+                            	<i class="sp-icon icon-choose-car"></i>
+                            	加入购物车</a>
+               		</div>
+               </div>
+            <div class="wxts">
+            	<p class="wxts">温馨提示 : 1.不支持退货;2.在线订单需要在半小时内支付否则订单将失效</p>
+            </div>   
+			  
+		</div>
+	</div>
+	
+	<!--
+		
+		异步加载尾部
+		
+	-->
+	<div class="footer">
+		
+	</div>
 </body>
 </html>
