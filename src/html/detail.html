@@ -21,21 +21,23 @@
 	</div>
 	
 	<!--商品的详情-->
+	<script type="text/html" id="xqprod_temp">
+	 	 {{ each products prod }}
 	<div class="prod_xq">
 		<div class="left_pic">
-			<img src="../images/big24.jpg" data-zoom-image="../images/big24.jpg">
+			<img src="../{{prod.img2}}" data-zoom-image="../{{prod.img2}}">
 		</div>
 		<div class="left_prod">
-			 <p class="pro-title" id="cmd-title" >【预售】鲜切里脊肉丝 200g/份【银犁小鲜肉】</p>
-             <p id="cmd-comment" >选用当日新鲜里脊肉制作，肉丝径宽约0.35cm，长约5cm。</p>
+			 <p class="pro-title" id="cmd-title" >{{prod.title}}</p>
+             <p id="cmd-comment" >{{prod.title2}}</p>
              <div class="discount-per">
                     <p class="discount">
                         <span class="color-tint-gray">折扣价：</span>
-                        <span id = "sale-price" >¥6.20 </span>
+                        <span id = "sale-price" >¥{{prod.price}} </span>
                     </p>
                     <p class="average">
                         <span class="y_tint-gray">原&nbsp;&nbsp;&nbsp;价：</span>
-                        <span id = "avg-price">¥7.00 </span>
+                        <span id = "avg-price">¥{{prod.yuanjia}} </span>
                         <span class="price-avg">该价格统计为各大超市及菜市场&nbsp;均价</span>
                     </p>
 	          </div> 
@@ -79,7 +81,8 @@
 			  
 		</div>
 	</div>
-	
+	 {{/each}}
+	</script>
 	<!--
 		
 		异步加载尾部

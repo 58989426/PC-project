@@ -12,7 +12,7 @@ require(["config"], function(){
 	  $.getJSON("/mock/djjx.json",function(data){
 	  	//使用arttemplate渲染
 	  	let html = template("prod_temp",{products : data.res_body.products});
-	  	console.log(html)
+	  	console.log(data)
 	  	//显示
 	  	$("#recommendDiv").prepend(html);
 	  })
