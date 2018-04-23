@@ -1,12 +1,66 @@
 @charset "UTF-8";
 .header{
-    width: 1200px;
-    margin: 0 auto;
-    height: 32px;
-    line-height: 32px;
+    
     .top{
+        padding-left:50px ;
+        margin: 0 auto;
+        height: 32px;
+        line-height: 32px;
+        background: #f1f1f1;
+        padding-right: 30px;
         p{
-            
+          float: left;  
+        }
+        ul{
+            float: right;
+            li{
+                float: left;
+                list-style: none;
+            }
+            span{
+                padding: 0 6px;
+                float: left;
+            }
+        }
+    }
+    .re_pic{
+        height: 90px;
+        padding-left: 50px;
+        padding-top: 23px;
+        box-sizing: border-box;
+    }
+}
+
+.footer{
+    height: 60px;
+    p{
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        span{
+            padding: 0 6px;
+        }
+    }
+}
+
+
+//登录
+.login_main{
+    height: 500px;
+    background: #5fbb68;
+    .login_box{
+        height: 500px;
+        width: 1000px;
+        margin: 0 auto;
+        border: 1px solid black;
+        background: url(../images/login_n.png ) no-repeat;
+        background-position: center left;
+        .login_box2{
+            height: 330px;
+            margin-top: 30px;
+            width: 330px;
+            float: right;
+            background: white;
         }
     }
 }
