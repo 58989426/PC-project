@@ -3,14 +3,14 @@
 	"res_error":"",
 	"res_body":{
 		"products":[
-		{"pid":1, "title":"不知火/丑柑（中果） 950-1050 g/份", "price":38, "img":"images/31.png"},
-			{"pid":2, "title":"越南进口小青芒 500-550 g/份", "price":28, "img":"images/pic32.png"},
-			{"pid":3, "title":"库尔勒香梨特级（大果） 850-950 g", "price":42, "img":"images/pic33.png"},
-			{"pid":4, "title":"精选静宁富士苹果 950-1050 g/4个装", "price":42, "img":"images/pic34.png"},
-			{"pid":5, "title":"口口脆西瓜 1.35-1.60 kg/个", "price":20, "img":"images/pic35.png"},
-			{"pid":6, "title":"【促销】海南香蕉 950-1050 g/5-7根装", "price":38, "img":"images/pic36.png"},
-			{"pid":7, "title":"金枕榴莲 2.60-2.85 kg/个", "price":38, "img":"images/pic37.png"},
-			{"pid":8, "title":"【促销】黄心猕猴桃 950-1050 g装", "price":28, "img":"images/pic38.png"}
+		{"pid":1, "title":"不知火/丑柑（中果） 950-1050 g/份", "price":38, "img":"images/31.jpg"},
+			{"pid":2, "title":"越南进口小青芒 500-550 g/份", "price":28, "img":"images/pic32.jpg"},
+			{"pid":3, "title":"库尔勒香梨特级（大果） 850-950 g", "price":42, "img":"images/pic33.jpg"},
+			{"pid":4, "title":"精选静宁富士苹果 950-1050 g/4个装", "price":42, "img":"images/pic34.jpg"},
+			{"pid":5, "title":"口口脆西瓜 1.35-1.60 kg/个", "price":20, "img":"images/pic35.jpg"},
+			{"pid":6, "title":"【促销】海南香蕉 950-1050 g/5-7根装", "price":38, "img":"images/pic36.jpg"},
+			{"pid":7, "title":"金枕榴莲 2.60-2.85 kg/个", "price":38, "img":"images/pic37.jpg"},
+			{"pid":8, "title":"【促销】黄心猕猴桃 950-1050 g装", "price":28, "img":"images/pic38.jpg"}
 			
 			
 		]

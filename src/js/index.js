@@ -15,5 +15,13 @@ require(["config"], function(){
 	  	//显示
 	  	$("#recommendDiv").prepend(html);
 	  })
+	  
+	  //异步加载产品列表
+	  $.getJSON("/mock/lb1.json",function(data1){
+	  	//使用arttemplate渲染
+	  	let html = template("prod_temp1",{products : data1.res_body.products});
+	  	//显示
+	  	$(".prod_list1").prepend(html);
+	  })
 	});
 });
