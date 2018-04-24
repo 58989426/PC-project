@@ -3,12 +3,55 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Document</title>
-	<script src="lib/requirejs/require.js" data-main = "js/index"></script>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/css.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/footer.css"/>
+	<link rel="stylesheet" href="../css/header.css" />
+	<script src="../lib/requirejs/require.js" data-main = "../js/cart"></script>
 </head>
 <body>
 	<!--头部-->
 	<div class="header">
 		
+	</div>
+	<!--购物车主体-->
+	<div class="cart_main">
+		<h3>全部商品</h3>
+		
+		<div class="cart_empty">
+		    <h1>当前购物车为空</h1>
+		    <h2>快到首页选购！！！！！ <a href="/">首页</a>.</h2>
+    	</div>
+		  <table border="1" class="cart_table">
+    	<thead>
+    		<tr>
+    			<td><label><input type="checkbox" class="ck_all">全选</label></td>
+    			<td>图片</td>
+    			<td>标题</td>
+    			<td>单价</td>
+    			<td>数量</td>
+    			<td>小计</td>
+    			<td>操作</td>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr>
+    		<td><input type="checkbox" class="ck_prod"></td>
+    		<td><img src="/{{prod.img}}"></td>
+    		<td>{{prod.title}}</td>
+    		<td>{{prod.price}}</td>
+    		<td><button class="minus">-</button><input type="text" value="{{prod.amount}}" size="2" class="amount"><button class="add">+</button></td>
+    		<td class="sub">{{(prod.amount*prod.price).toFixed(2)}}</td>
+    		<td><a href="javascript:void(0);" class="del">删除</a></td>
+    	</tr>
+    	</tbody>
+    	<tfoot>
+    		<tr>
+    			<td>合计</td>
+    			<td colspan="7">0.00</td>
+    		</tr>
+    	</tfoot>
+    </table>
 	</div>
 	<!--尾部-->
 	<div class="footer">
