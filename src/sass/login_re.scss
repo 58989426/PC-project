@@ -61,6 +61,58 @@
             width: 330px;
             float: right;
             background: white;
+            padding-left: 20px;
+            box-sizing: border-box;
+            .login_title{
+                height: 36px;
+                margin-top: 18px;
+                line-height: 36px;
+                .mima{
+                    float: left;
+                    display: block;
+                    width: 110px;
+                    height: 36px;
+                    font-size: 16px;
+                    text-align: center;
+                    color: #C0C0C0;
+                }
+                .mima:hover{
+                    color: yellow;
+                    border-bottom: 2px solid yellow;
+                }
+                
+                span{
+                    display: block;
+                    float: left;
+                    padding: 0 6px;
+                }
+                .yzmdl{
+                    padding-left: 6px;
+                    width: 135px;
+                    display: block;
+                    float: left;
+                    height: 36px;
+                    font-size: 16px;
+                    color: #C0C0C0;
+                }
+                .yzmdl:hover{
+                    color: yellow;
+                    border-bottom: 2px solid yellow;
+                }
+            }
+            .input{
+                margin-top: 18px;
+                height: 40px;
+                width: 260px;
+                button{
+                    height: 40px;
+                    width: 40px;
+                    background: #dddddd;
+                   #in1,#in2{
+                       height: 40px;
+                   }
+                }
+            }
         }
     }
 }
