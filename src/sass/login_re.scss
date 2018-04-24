@@ -52,7 +52,7 @@
         height: 500px;
         width: 1000px;
         margin: 0 auto;
-        border: 1px solid black;
+       
         background: url(../images/login_n.png ) no-repeat;
         background-position: center left;
         .login_box2{
@@ -61,12 +61,13 @@
             width: 330px;
             float: right;
             background: white;
-            padding-left: 20px;
-            box-sizing: border-box;
+           padding-left: 20px;
+           box-sizing: border-box;
             .login_title{
                 height: 36px;
                 margin-top: 18px;
                 line-height: 36px;
+                margin-bottom: 30px;
                 .mima{
                     float: left;
                     display: block;
@@ -77,8 +78,8 @@
                     color: #C0C0C0;
                 }
                 .mima:hover{
-                    color: yellow;
-                    border-bottom: 2px solid yellow;
+                    color: #ffc000;
+                    border-bottom: 2px solid #ffc000;
                 }
                 
                 span{
@@ -96,23 +97,120 @@
                     color: #C0C0C0;
                 }
                 .yzmdl:hover{
-                    color: yellow;
-                    border-bottom: 2px solid yellow;
+                    color: #ffc000;
+                    border-bottom: 2px solid #ffc000;
                 }
             }
+           
             .input{
                 margin-top: 18px;
                 height: 40px;
                 width: 260px;
                 button{
-                    height: 40px;
+                    height: 44px;
                     width: 40px;
                     background: #dddddd;
-                   #in1,#in2{
-                       height: 40px;
+                    border: 0;
+                    float: left;
                    }
+                    #in1,#in2{
+                       height: 40px;
+                       width: 216px;
+                        
+                       float: left;
+                }
+                
+            }
+            
+            #zddl{
+                float: left;
+                position: relative;
+                top: 3px;
+            }
+            span{
+                height: 20px;
+                padding-left: 4px;
+                
+            }
+            a{
+                margin-top: 20px;
+                display: block;
+                height: 40px;
+                width: 260px;
+                line-height: 40px;
+                text-align: center;
+                background: #ffc000;
+                font-size: 16px;
+                font-weight: 900;
+                color: white;
+            }
+            .register-now{
+                margin-top: 20px;
+                background: #f5f5f5;
+                height: 32px;
+                p{
+                    width: 100px;
+                    float: right;
+                    height: 32px;
+                    line-height: 32px;
+                    font-size: 14px;
                 }
             }
         }
     }
 }
+
+//注册
+.register_main{
+    height: 500px;
+    background: #5fbb68;
+    .register_box{
+        height: 500px;
+        width: 1000px;
+        margin: 0 auto;
+       
+        background: url(../images/login_n.png ) no-repeat;
+        background-position: center left;
+        .register_box2{
+            height: 440px;
+            margin-top: 30px;
+            width: 330px;
+            float: right;
+            background: white;
+           padding-left: 20px;
+           box-sizing: border-box;
+           
+           .register_title{
+               margin-top: 25px;
+               height: 36px;
+               font-size: 18px;
+               font-weight: 900;
+           }
+           #phone{
+               width: 260px;
+               height: 38px;
+               margin-bottom: 18px;
+               margin-top: 18px;
+           }
+           #r_mima{
+                width: 260px;
+               height: 38px;
+               margin-bottom: 18px;
+               
+           }
+           #r_mima2{
+                 width: 260px;
+               height: 38px;
+               margin-bottom: 18px; 
+           }
+           #r_yzm{
+                  width: 150px;
+               height: 38px;
+               margin-bottom: 25px;
+               float: left;
+           }
+           
+           }
+    }
+    
+}       
