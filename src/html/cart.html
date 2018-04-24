@@ -39,12 +39,16 @@
     		<script type="text/html" id="prod_list_temp">
 	 		 {{ each products prod }}
 				<tr class="content">
+				
 				<td class="td1"><input type="checkbox" class="ck_prod"></td>
 				<td class="td2"><img src="/{{prod.img}}"></td>
 				<td class="td3">{{prod.title}}</td>
 				<td class="td4">￥{{prod.price}}</td>
-				<td class="td5"><button class="minus">-</button><input type="text" value="{{prod.amount}}" size="2" class="amount"><button class="add">+</button></td>
-				<td class="sub">￥{{(prod.amount*prod.price).toFixed(2)}}</td>
+				<td class="td5">
+					<button class="minus" data-pid="{{prod.prodid}}">-</button>
+					<input type="text" value="{{prod.amount}}" data-pid="{{prod.prodid}}" size="2" class="amount">
+					<button class="add" data-pid="{{prod.prodid}}">+</button></td>
+				<td class="sub">{{(prod.amount*prod.price).toFixed(2)}}</td>
 				<td class="td6"><a href="javascript:void(0);" class="del">删除</a></td>
 			</tr>
 			 {{/each}}
@@ -52,8 +56,11 @@
     	</tbody>
     	<tfoot>
     		<tr>
-    			<td colspan="3" class="quanx"><input type="checkbox" class="ck_prod_all">&nbsp;:全选</td>
-    			<td colspan="7" class="jiesuan">已选 0 种商品，订单总金额: ￥<span></span> <a href="/">结算</a></td>
+    			<td colspan="3" class="quanx">
+    				<input type="checkbox" class="ck_prod_all">
+    				&nbsp;:全选
+    			</td>
+    			<td colspan="7" class="jiesuan">已选 <span class="total_num">0</span> 种商品，订单总金额: ￥<span class="total_mon">0</span> <a href="/">结算</a></td>
     			
     		</tr>
     	</tfoot>

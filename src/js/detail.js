@@ -34,7 +34,7 @@ require(["config"], function(){
 			//获取 cookie 中保存的 购物车
 			let products = $.cookie("products") || [];
 			// 判断原购物车中是否已存在选购商品
-			let index = exist(prod.pid, products);
+			let index = exist(prod.prodid, products);
 			if (index === -1) // 不存在
 				// 将当前选购商品添加到数组中保存
 				products.push(prod);
@@ -47,7 +47,7 @@ require(["config"], function(){
 			function exist(id, products) {
 				var existIndex = -1;
 				$.each(products, function(index, prod){
-					if(prod.pid === id) {
+					if(prod.prodid == id) {
 						existIndex = index;
 						return false;
 					}

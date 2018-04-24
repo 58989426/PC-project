@@ -12,10 +12,7 @@ require(["config"], function(){
 	  //事件委派
 	  
 	  
-	   $.getJSON("/mock/spxq1.json",function(data){
-	    	console.log(data)
-	  		
-	  })
+	   
 	  $(".goods_rx").on("click",function(){
 	  		/*location="../html/detail.html";*/
 	  		console.log("555555")
