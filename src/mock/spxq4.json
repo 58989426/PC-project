@@ -1,0 +1,11 @@
+{
+	"res_code":"0",
+	"res_error":"",
+	"res_body":{
+		"products":[
+			{"pid":4, "title":"鲜切里脊肉丝 200g/份", "price":38, "img":"images/pic114.jpg","href":"html/detail.html","yuanjia":56,"titel2":"选用当日新鲜里脊肉制作，肉丝径宽约0.35cm，长约5cm。","img2":"images/big444.jpg"}
+			
+			
+		]
+	}
+}

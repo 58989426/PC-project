@@ -23,9 +23,10 @@
 	<!--商品的详情-->
 	
 	<div class="prod_xq">
-		<span class="id" style="display:none">{{prod.pid}}</span>
+		
 		<script type="text/html" id="xqprod_temp">
 	 	 {{ each products prod }}
+	 	 <span class="p_id" style="display:none">{{prod.pid}}</span>
 		<div class="left_pic">
 			<img src="../{{prod.img2}}" data-zoom-image="../{{prod.img2}}" id="pic_img">
 		</div>

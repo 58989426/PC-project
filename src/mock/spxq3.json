@@ -1,0 +1,13 @@
+
+
+{
+	"res_code":"0",
+	"res_error":"",
+	"res_body":{
+		"products":[
+			{"pid":3, "title":"开背游龙斑 约470g/袋", "price":20.9, "img":"images/pic113.jpg","href":"html/detail.html","yuanjia":38,"titel2":"活鱼制作，肉质鲜嫩，鱼身刺少，清蒸、红烧皆宜。重量450~500g","img2":"images/big333.jpg"}
+			
+			
+		]
+	}
+}

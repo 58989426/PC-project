@@ -1,0 +1,10 @@
+{
+	"res_code":"0",
+	"res_error":"",
+	"res_body":{
+		"products":[	
+			{"pid":13, "title":"仔姜 250g/份", "price":38, "img":"images/pic21.jpg","yuanjia":56,"titel2":"为生姜的幼嫩根茎，姜指修长洁白","img2":"images/big31.jpg"}
+			
+		]
+	}
+}

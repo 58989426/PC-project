@@ -1,0 +1,9 @@
+{
+	"res_code":"0",
+	"res_error":"",
+	"res_body":{
+		"products":[
+			{"pid":2, "title":"精瘦肉 250/g份", "price":5.8, "img":"images/pic112.jpg","href":"html/detail.html","yuanjia":7,"titel2":"【预售】去脂、去皮，纯瘦肉，筋膜极少","img2":"images/big21.jpg"}
+		]
+	}
+}
