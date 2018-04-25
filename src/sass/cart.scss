@@ -54,8 +54,16 @@
                }
             }
             .jiesuan{
-                padding-left: 400px;
+                padding-left: 120px;
                 padding-right: 30px;
+                span.total_num{
+                    font-size: 16px;
+                    color: darkorange;
+                }
+                span.total_mon,.money{
+                    font-size: 18px;
+                    color: hotpink;
+                }
                 a{
                     display: block;
                     float: right;

@@ -132,7 +132,7 @@
                 padding-left: 4px;
                 
             }
-            a{
+            .dl{
                 margin-top: 20px;
                 display: block;
                 height: 40px;
@@ -179,9 +179,18 @@
             background: white;
            padding-left: 20px;
            box-sizing: border-box;
-           
+           .error_text{
+               height: 20px;
+               text-align: center;
+               color: red;
+               width: 260px;
+               font-size: 14px;
+               line-height: 20px;
+               display: none;
+               
+           }
            .register_title{
-               margin-top: 25px;
+               margin-top: 5px;
                height: 36px;
                font-size: 18px;
                font-weight: 900;
@@ -216,11 +225,11 @@
                width: 100px;
                border-radius: 5%;
                height: 40px;
-               background: #7bbe2b;
+                border: 1px solid paleturquoise;
                line-height: 40px;
                text-align: center;
                font-size: 14px;
-               color: white;
+               color: aquamarine;
            }
            #r_checkbox{
                float: left;

@@ -33,6 +33,9 @@ require(["config"], function(){
 			$(".cart_empty").show()
 							.next(".cart_table").hide();
 		}
+		
+		// 计算合计
+		calcTotal();
 		})
 		
 		//商品数量的修改
@@ -61,6 +64,8 @@ require(["config"], function(){
 		/*console.log(xiaoji)*/
 		$(this).parent().siblings(".sub").text(xiaoji.toFixed(2));
 		
+		// 计算合计
+		calcTotal();
 		})
 	//手动修改商品数量
 		$(".product_list").on("blur",".amount",function(){
@@ -82,6 +87,9 @@ require(["config"], function(){
 		let xiaoji = _products[_index].amount * _products[_index].price;
 		/*console.log(xiaoji)*/
 		$(this).parent().siblings(".sub").text(xiaoji.toFixed(2));
+		
+		// 计算合计
+		calcTotal();
 		})
 		
 		
@@ -92,7 +100,7 @@ require(["config"], function(){
 		// 设置所有商品行前复选框选中状态
 		$(".ck_prod").prop("checked", _status);
 		// 计算合计
-		
+		calcTotal();
 	});
 		//当商品的选择框有取消 则 取消选择状态
 		
@@ -101,6 +109,7 @@ require(["config"], function(){
 		$(".ck_all,.ck_prod_all").prop("checked", _status);
 		// 计算合计
 		calcTotal();
+		proTotal();
 	});
 		
 		//计算合计
@@ -108,13 +117,17 @@ require(["config"], function(){
 			let sum = 0;
 			$(".ck_prod:checked").each(function(index, element){
 				sum += parseFloat($(this).parents(".content").find(".sub").text());
-				console.log(sum)
+				/*console.log(sum)*/
 			});
 			
 			$(".total_mon").text(sum.toFixed(2));
 		}
 		//共选择几种商品
-		
+		function proTotal() {
+			let sum2 = $(".ck_prod:checked").length;
+			console.log($(".ck_prod:checked"))
+			$(".total_num").text(sum2);
+		}
 		
 		// 找出 id 对应商品在 prodcuts 中下标
 		function exist(id, products) {

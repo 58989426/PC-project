@@ -5,6 +5,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="../css/css.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/login_re.css"/>
+	<script src="../lib/requirejs/require.js" data-main = "../js/register"></script>
 </head>
 <body>
 	<!--头部-->
@@ -27,14 +28,12 @@
 		<div class="register_box">
 			<div class="register_box2">
 				<p class="register_title"> 注册</p>
-				<input type="text"  id="phone" value="" placeholder="请输入手机号码" />
-				<input type="text"  id="r_mima" value="" placeholder="请输入密码" />
-				<input type="text"  id="r_mima2" value="" placeholder="请再次输入密码" />
-			
-					
-				
-				<input type="text"  id="r_yzm"value="" placeholder="请输入手机验证码" />
-				<a href="" class="fs">发送验证码</a></br>
+				<div class="error_text"></div>
+				<input type="text"  id="phone" value="请输入手机号码" placeholder="" />
+				<input type="text"  id="r_mima" value="请输入密码" placeholder="" />
+				<input type="text"  id="r_mima2" value="请再次输入密码" placeholder="" />
+				<input type="text"  id="r_yzm"value="请输入验证码" placeholder="" />
+				<a href="javascript:void(0)" class="fs">点击获取验证码</a></br>
 			
 				<input type="checkbox" name="r_checkbox" id="r_checkbox" value="" /><span>我同意</span></br>
 				<a href="" class="zc">注册</a>
