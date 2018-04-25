@@ -8,10 +8,18 @@ require(["config"], function(){
 	})
 
 	 $("#phone").on("blur",function(){
-	 	if ($(this).val() === "")
-			$(this).val("请输入手机号码");
 	 	let val_phone = $("#phone").val();
-
+	 		if (!(/^[1][0-9]{1,10}$/.test(val_phone))) {
+	 			$("#phone").parents(".reg_form").siblings(".error_text").text("输入手机格式有误").css("display","block");
+	 			if($(this).val()==="")	{
+	 				$("#phone").parents(".reg_form").siblings(".error_text").css("display","none");
+	 			}
+	 		}else{
+	 		$("#phone").parents(".reg_form").siblings(".error_text").css("display","none");
+	 	}
+	 	
+		if ($(this).val() === "")
+			$(this).val("请输入手机号码");
 	 })
 	
 	//判断输入的第一次密码
@@ -21,11 +29,17 @@ require(["config"], function(){
 	})
 	
 	$("#r_mima").on("blur",function(){
+		let mima1 = $("#r_mima").val();
+		if (!(/(?!^[0-9]+$)(?!^[A-z]+$)(?!^[^A-z0-9]+$)^.{6,16}$/.test(mima1))) {
+	 			$("#r_mima").parents(".reg_form").siblings(".error_text").text("密码格式有误").css("display","block");
+	 			if($(this).val()==="")	{
+	 				$("#r_mima").parents(".reg_form").siblings(".error_text").css("display","none");
+	 			}
+	 		}else{
+	 		$("#r_mima").parents(".reg_form").siblings(".error_text").css("display","none");
+	 	}
 		if ($(this).val() === "")
 			$(this).val("请输入密码");
-	 	let mima1 = $("#r_mima").val();
-	 	
-	 	console.log(mima1);
 	 })
 	
 	//判断输入的第二次密码
@@ -34,11 +48,20 @@ require(["config"], function(){
 			$(this).val("");
 	})
 	$("#r_mima2").on("blur",function(){
+	 let mima2 = $("#r_mima2").val(),
+	 	 mima1 = $("#r_mima").val();
+	 	if (mima1 !==mima2) {
+	 		$("#r_mima2").parents(".reg_form").siblings(".error_text").text("两次输入的密码不一致").css("display","block");
+	 			if($(this).val()==="")	{
+	 				$("#r_mima").parents(".reg_form").siblings(".error_text").css("display","none");
+	 			}
+	 	}else{
+	 		$("#r_mima2").parents(".reg_form").siblings(".error_text").css("display","none");
+	 	}
+	 
 		if ($(this).val() === "")
 			$(this).val("请再次输入密码");
-	 	let mima2 = $("#r_mima2").val();
-	 	
-	 	console.log(mima2);
+
 	 })
 	
 	
@@ -80,22 +103,182 @@ require(["config"], function(){
 
 	//获取文本框中的验证码
 	$("#r_yzm").on("blur",function(){
-		if ($(this).val() === "")
-			$(this).val("请输入验证码")
 	 	let yzm1 = $("#r_yzm").val(),
 	 		yzm2 = $("#r_yzm").siblings(".fs").text();
 	 	
 	 	if (yzm1 !== yzm2) {
-	 		$("#r_yzm").siblings(".error_text").text("输入验证码有误").css("display","block");
+	 		$("#r_yzm").parents(".reg_form").siblings(".error_text").text("输入验证码有误").css("display","block");
 	 			if($(this).val()==="")	{
-	 				$("#r_yzm").siblings(".error_text").css("display","none");
+	 				$("#r_yzm").parents(".reg_form").siblings(".error_text").css("display","none");
 	 			}
 	 			
 	 	}else{
-	 		$("#r_yzm").siblings(".error_text").css("display","none");
+	 		$("#r_yzm").parents(".reg_form").siblings(".error_text").css("display","none");
 	 	}
 	 	
-	 	
+	 	if ($(this).val() === "")
+			$(this).val("请输入验证码")
 	 })
+	
+	//点击登录时判断复选框的选中状态
+	
+		$(".zc").on("click",function(e){
+			e.preventDefault();
+			if (($("#r_checkbox").is(":checked"))&&($(".error_text").css("display")==="none")) {	
+				var urll = $(".reg_form").attr("action"),
+					data1 = $(".reg_form").serialize();
+					//console.log(data)
+				/*$.post(urll, data, function(data){
+					console.log(data);
+					data = JSON.parse(data);
+					console.log(data)
+					if(data.res_code === 0)
+					alert("注册成功")
+				else
+					alert("注册失败")
+				},"json");*/
+				$.ajax({
+					url:urll,
+					type:"post",
+					datatype:"json",
+					data : data1,
+					success :function(data){	
+						data = JSON.parse(data);
+						console.log(data)
+						if(data.res_code === 0)
+								alert("注册成功")
+							else
+								alert("注册失败")
+					
+						}
+				})
+				}else{
+				$(".zc").parents(".reg_form").siblings(".error_text").text("输入信息有误").css("display","block");
+			}
+		})
 	});
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

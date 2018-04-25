@@ -29,14 +29,16 @@
 			<div class="register_box2">
 				<p class="register_title"> 注册</p>
 				<div class="error_text"></div>
-				<input type="text"  id="phone" value="请输入手机号码" placeholder="" />
-				<input type="text"  id="r_mima" value="请输入密码" placeholder="" />
-				<input type="text"  id="r_mima2" value="请再次输入密码" placeholder="" />
-				<input type="text"  id="r_yzm"value="请输入验证码" placeholder="" />
-				<a href="javascript:void(0)" class="fs">点击获取验证码</a></br>
-			
-				<input type="checkbox" name="r_checkbox" id="r_checkbox" value="" /><span>我同意</span></br>
-				<a href="" class="zc">注册</a>
+				<form action="http://localhost/register.php" method="post" class="reg_form">
+						<input type="text" name="phone"  id="phone" value="请输入手机号码" placeholder="" />
+						<input type="text" name="password"  id="r_mima" value="请输入密码" placeholder="" />
+						<input type="text"  id="r_mima2" value="请再次输入密码" placeholder="" />
+						<input type="text"  id="r_yzm"value="请输入验证码" placeholder="" />
+						<a href="javascript:void(0)" class="fs">点击获取验证码</a></br>
+					
+						<input type="checkbox"  id="r_checkbox" value="" checked/><span>我同意</span></br>
+						<a href="login.html" class="zc" target="_blank">注册</a>
+				</form>		
 				<div class="r_bottom">
 					<p class="yzmdl">手机验证码登录</p>
 					<span>|</span>
