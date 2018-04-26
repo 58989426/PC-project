@@ -20,8 +20,8 @@ require(["config"], function(){
 			// 当前待删除商品的编号，在数组中的索引
 		let _id = $(this).data("pid"),
 			_index = exist(_id, _products);
-			console.log(_id)
-			console.log(this)
+			//console.log(_id)
+			//console.log(this)
 		// 从数组中删除 _index 索引处的元素
 		_products.splice(_index, 1);
 		// 从cookie中移除部分数据：覆盖保存 _products 数组中的值
@@ -57,6 +57,8 @@ require(["config"], function(){
 		}
 		//覆盖保存cookie
 		$.cookie("products",_products,{expires:7, path:"/"})
+	
+		
 		//显示修改的结果
 		$(this).siblings(".amount").val(_products[_index].amount)
 		//显示小计
@@ -71,7 +73,7 @@ require(["config"], function(){
 		$(".product_list").on("blur",".amount",function(){
 			//获取修改商品数量的id
 			let _id = $(this).data("pid");
-			console.log(_id)
+			//console.log(_id)
 			//获取数组中的元素下标
 			let _index = exist(_id,_products);
 			// 判断输入数据的地格式
@@ -125,9 +127,13 @@ require(["config"], function(){
 		//共选择几种商品
 		function proTotal() {
 			let sum2 = $(".ck_prod:checked").length;
-			console.log($(".ck_prod:checked"))
+			//console.log($(".ck_prod:checked"))
 			$(".total_num").text(sum2);
+			
 		}
+		
+		
+		
 		
 		// 找出 id 对应商品在 prodcuts 中下标
 		function exist(id, products) {

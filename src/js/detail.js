@@ -19,7 +19,7 @@ require(["config"], function(){
 	  	/*加入购物车*/
 		$(".prod_xq").delegate("#cartBtn","click",function(e){
 			let that = $(this).parent().parent().parent().parent();
-			console.log(that)
+			//console.log(that)
 			//将当前选购到的商品信息获取到
 			let prod = {
 				prodid : $(that).find(".p_id").text(),
@@ -28,7 +28,7 @@ require(["config"], function(){
 				img : $(that).find("img").attr("src"),
 				amount : $(that).find("#count-num").val()
 			}
-			console.log(prod)
+			//console.log(prod)
 			//配置cookie插件
 			$.cookie.json = true;
 			//获取 cookie 中保存的 购物车
@@ -43,6 +43,25 @@ require(["config"], function(){
 				products[index].amount++;
 			// 将购物车再保存回 cookie 中
 			$.cookie("products", products, {expires:7, path:"/"});
+			
+			
+			// 加载购物车成功：抛物线
+				let end = $("#cartNum").offset(),
+					flyer = $(`<img src="${prod.img}">`);
+				console.log(end,flyer)			
+				flyer.fly({
+					start : {
+						left : e.pageX,
+						top : e.pageY
+					},
+					end : {
+						left : end.left,
+						top : end.top,
+						width: 20,
+						height:20
+					}
+				});
+		
 			
 			function exist(id, products) {
 				var existIndex = -1;

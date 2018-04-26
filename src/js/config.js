@@ -6,7 +6,8 @@ require.config({
 		cookie : "lib/jquery-plugins/jquery.cookie",
 		zoom : "lib/jquery-plugins/jquery.elevateZoom-3.0.8.min",
 		loadHF : "js/loadHeaderFooter",
-		boots :"lib/bootstr/bootstrap.min"
+		boots :"lib/bootstr/bootstrap.min",
+		fly : "lib/jquery-plugins/jquery.fly.min"
 	},
 	shim : {
 		zoom : {
@@ -14,6 +15,9 @@ require.config({
 			
 		},
 		boots : {
+			deps : ["jquery"]
+		},
+		fly : {
 			deps : ["jquery"]
 		}
 	}

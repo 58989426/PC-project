@@ -127,23 +127,26 @@ require(["config"], function(){
 			if (($("#r_checkbox").is(":checked"))&&($(".error_text").css("display")==="none")) {	
 				var urll = $(".reg_form").attr("action"),
 					data1 = $(".reg_form").serialize();
+					console.log(data1);
 					//console.log(data)
-				/*$.post(urll, data, function(data){
+//					console.log($.post == jQuery.post);
+//					console.log(jQuery.post);
+				$.post(urll, data1, function(data){
 					console.log(data);
-					data = JSON.parse(data);
-					console.log(data)
+//					data = JSON.parse(data);
+					/*console.log(data)*/
 					if(data.res_code === 0)
-					alert("注册成功")
-				else
-					alert("注册失败")
-				},"json");*/
-				$.ajax({
+						alert("注册成功");
+					else
+						alert("注册失败");
+				}, "json");
+				/*$.ajax({
 					url:urll,
 					type:"post",
-					datatype:"json",
+					dataType:"json",
 					data : data1,
 					success :function(data){	
-						data = JSON.parse(data);
+
 						console.log(data)
 						if(data.res_code === 0)
 								alert("注册成功")
@@ -151,7 +154,7 @@ require(["config"], function(){
 								alert("注册失败")
 					
 						}
-				})
+				})*/
 				}else{
 				$(".zc").parents(".reg_form").siblings(".error_text").text("输入信息有误").css("display","block");
 			}
