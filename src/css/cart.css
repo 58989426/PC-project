@@ -34,8 +34,14 @@
           position: relative;
           top: 2px; }
       .cart_main .cart_table tfoot .jiesuan {
-        padding-left: 400px;
+        padding-left: 120px;
         padding-right: 30px; }
+        .cart_main .cart_table tfoot .jiesuan span.total_num {
+          font-size: 16px;
+          color: darkorange; }
+        .cart_main .cart_table tfoot .jiesuan span.total_mon, .cart_main .cart_table tfoot .jiesuan .money {
+          font-size: 18px;
+          color: hotpink; }
         .cart_main .cart_table tfoot .jiesuan a {
           display: block;
           float: right;

@@ -28,6 +28,10 @@ header {
 /*logo样式*/
 .header_logo {
   margin-left: 50px; }
+  .header_logo a {
+    display: block;
+    height: 43px;
+    height: 190px; }
 
 .sea_bar .sea_keyword {
   border: 1px solid #ffc000;

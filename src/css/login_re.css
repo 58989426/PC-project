@@ -85,9 +85,12 @@
         .login_main .login_box .login_box2 .input button {
           height: 44px;
           width: 40px;
-          background: #dddddd;
           border: 0;
           float: left; }
+        .login_main .login_box .login_box2 .input .ren {
+          background: url(../images/ren.gif) no-repeat center center, #dddddd; }
+        .login_main .login_box .login_box2 .input .suo {
+          background: url(../images/suo.gif) no-repeat center center, #dddddd; }
         .login_main .login_box .login_box2 .input #in1, .login_main .login_box .login_box2 .input #in2 {
           height: 40px;
           width: 216px;

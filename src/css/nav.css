@@ -7,36 +7,42 @@ nav {
   nav #menu_detail {
     position: absolute;
     left: 210px;
-    display: none;
     top: 33px;
-    background: white;
     width: 1017px;
-    min-height: 361px;
-    border: 1px solid #36c573;
-    z-index: 2; }
-    nav #menu_detail .menu-pannel {
-      text-align: left;
-      float: left;
-      padding: 20px;
-      height: 360px;
-      width: 1017px; }
-      nav #menu_detail .menu-pannel .second-menu {
-        display: inline-block;
-        margin-right: 48px;
-        margin-top: 15px; }
-        nav #menu_detail .menu-pannel .second-menu .second-menu-img {
-          width: 70px;
-          height: 70px;
-          cursor: pointer;
-          border-radius: 50%; }
-        nav #menu_detail .menu-pannel .second-menu .second-menu-name {
-          font-size: 14px;
-          font-weight: bold;
-          color: #666666;
-          text-align: center;
-          line-height: 14px;
-          padding-top: 5px;
-          margin-bottom: 5px; }
+    height: 360px;
+    z-index: 2;
+    overflow: hidden; }
+    nav #menu_detail section {
+      height: 3240px;
+      border: 1px solid black;
+      display: none;
+      position: absolute;
+      top: 0;
+      transition: top .01s ease; }
+      nav #menu_detail section .menu-pannel {
+        text-align: left;
+        float: left;
+        padding: 20px;
+        height: 360px;
+        width: 1017px;
+        background: white; }
+        nav #menu_detail section .menu-pannel .second-menu {
+          display: inline-block;
+          margin-right: 48px;
+          margin-top: 15px; }
+          nav #menu_detail section .menu-pannel .second-menu .second-menu-img {
+            width: 70px;
+            height: 70px;
+            cursor: pointer;
+            border-radius: 50%; }
+          nav #menu_detail section .menu-pannel .second-menu .second-menu-name {
+            font-size: 14px;
+            font-weight: bold;
+            color: #666666;
+            text-align: center;
+            line-height: 14px;
+            padding-top: 5px;
+            margin-bottom: 5px; }
 
 .menu-a {
   display: block;
@@ -61,8 +67,8 @@ nav {
   margin-left: 30px;
   text-align: center;
   width: 180px;
-  position: relative;
-  top: 0;
+  position: absolute;
+  top: 34px;
   height: 360px;
   background: white;
   opacity: .8;
@@ -90,5 +96,12 @@ nav {
 .sp-name:hover {
   background: paleturquoise;
   opacity: .8; }
+
+#name2:hover section {
+  display: block;
+  top: 720px; }
+
+/*#name1:hover #pannel1 {
+  display: block; }*/
 
 /*# sourceMappingURL=nav.css.map */
