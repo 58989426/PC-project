@@ -9,21 +9,27 @@ nav{
                 #menu_detail{
                 position: absolute;
                 left: 210px;
-                opacity: .9;
                 top: 33px;
-                display: none;
-                background: white;
                 width: 1017px;
-                min-height: 361px;
-                border:1px solid #36c573;
+                height: 360px;
+                //border:1px solid #36c573;
                 z-index:2;
-                                .menu-pannel{
+                overflow: hidden;
+                                section{
+                                    height: 3240px;
+                                    border: 1px solid black;
+                                    display: none;
+                                    position: absolute;
+                                    top: 0;
+                                    transition: top .01s ease;
+                                    .menu-pannel{
                                 text-align: left;
                                 float: left;
                                 padding:20px;
                                 height: 360px;
                                 width: 1017px;
-                                display: none;
+                                //display: none;
+                                background: white;
                                                 .second-menu {
                                                 display: inline-block;
                                                 margin-right: 48px;
@@ -47,7 +53,10 @@ nav{
                                                 
                                                     }
                                   }
+                                }
                     }
+                    
+            
 }
 .menu-a{
     
@@ -72,6 +81,7 @@ nav{
     color: white;
     text-decoration: none;
 }
+
 //菜单
 .sp-menu-list{
     margin-left: 30px;
@@ -85,6 +95,7 @@ nav{
     font-size: 14px;
     z-index:10;
 }
+
 .sp-name{
     height: 40px;
     line-height: 40px;
@@ -107,13 +118,19 @@ nav{
 }
 
 }
+
 .sp-name:hover{
     background: paleturquoise;
     opacity: .8;
 }
-
+#name2:hover section{
+    display: block;
+    top: 720px;
+}
 #name1:hover{
     #pannel1{
         display: block
     }
 }
+
+
