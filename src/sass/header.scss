@@ -32,7 +32,11 @@ header{
 /*logo样式*/
 .header_logo{
     margin-left: 50px;
-   
+   a{
+       display: block;
+       height: 43px;
+       height: 190px;
+   }
 }
 
 //搜索框

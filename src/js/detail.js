@@ -1,5 +1,5 @@
 require(["config"], function(){
-	require(["jquery","template","boots" ,"loadHF","zoom","cookie"], function($,template){
+	require(["jquery","template","boots" ,"loadHF","zoom","cookie","fly"], function($,template){
 
 	/** 
 	 读取id值 更具id 值去读取相应的商品详情
@@ -48,6 +48,7 @@ require(["config"], function(){
 			// 加载购物车成功：抛物线
 				let end = $("#cartNum").offset(),
 					flyer = $(`<img src="${prod.img}">`);
+					 
 				console.log(end,flyer)			
 				flyer.fly({
 					start : {
@@ -57,8 +58,8 @@ require(["config"], function(){
 					end : {
 						left : end.left,
 						top : end.top,
-						width: 20,
-						height:20
+						width: 0,
+						height:0
 					}
 				});
 		
