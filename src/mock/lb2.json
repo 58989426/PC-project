@@ -3,7 +3,7 @@
 	"res_error":"",
 	"res_body":{
 		"products":[
-		{"pid":21, "title":"不知火/丑柑（中果） 950-1050 g/份", "price":38, "img":"images/31.jpg"},
+		{"pid":21, "title":"不知火/丑柑（中果） 950-1050 g/份", "price":38, "img":"images/pic31.jpg"},
 			{"pid":22, "title":"越南进口小青芒 500-550 g/份", "price":28, "img":"images/pic32.jpg"},
 			{"pid":23, "title":"库尔勒香梨特级（大果） 850-950 g", "price":42, "img":"images/pic33.jpg"},
 			{"pid":24, "title":"精选静宁富士苹果 950-1050 g/4个装", "price":42, "img":"images/pic34.jpg"},

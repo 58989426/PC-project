@@ -148,6 +148,10 @@
                     text-align: center;
                     font-size: 16px;
                     color: black;
+                    width: 190px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
                 span{
                     display: block;

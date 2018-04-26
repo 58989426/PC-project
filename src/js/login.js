@@ -33,7 +33,7 @@ require(["config"], function(){
 						if (data.res_code === 0) 
 							{
 								alert("登录成功")
-								location:"../index.html";
+								location="/";
 							//当选中记住密码登录成功时保存cookie
 							$.cookie.json = true;
 								var uesr_mes = $.cookie("data",data.res_body.user, {expires:7, path:"/"})

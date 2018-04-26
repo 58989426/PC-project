@@ -109,10 +109,16 @@
                 button{
                     height: 44px;
                     width: 40px;
-                    background: #dddddd;
+                    //background: ;
                     border: 0;
                     float: left;
                    }
+                .ren{
+                    background:url(../images/ren.gif) no-repeat center center,#dddddd;
+                }   
+                .suo{
+                    background:url(../images/suo.gif) no-repeat center center,#dddddd;
+                }   
                     #in1,#in2{
                        height: 40px;
                        width: 216px;
